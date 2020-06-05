@@ -1,0 +1,19 @@
+{
+  "item.dye_extension.red_stick": "Red Stick",
+  "item.dye_extension.blue_stick": "Blue Stick",
+  "item.dye_extension.brown_stick": "Brown Stick",
+  "item.dye_extension.lime_stick": "Lime Stick",
+  "item.dye_extension.pink_stick": "Pink Stick",
+  "item.dye_extension.black_stick": "Black Stick",
+  "item.dye_extension.magenta_stick": "Magenta Stick",
+  "item.dye_extension.yellow_stick": "Yellow Stick",
+  "item.dye_extension.gray_stick": "Gray Stick",
+  "item.dye_extension.light_gray_stick": "Light Gray Stick",
+  "item.dye_extension.white_stick": "White Stick",
+  "item.dye_extension.light_blue_stick": "Light Blue Stick",
+  "item.dye_extension.cyan_stick": "Cyan Stick",
+  "item.dye_extension.purple_stick": "Purple Stick",
+  "item.dye_extension.green_stick": "Green Stick",
+  "item.dye_extension.orange_stick": "Orange Stick",
+  "itemGroup.dyeExtensionTab": "Dye Extension"
+}
