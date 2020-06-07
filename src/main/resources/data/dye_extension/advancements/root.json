@@ -1,0 +1,39 @@
+{
+    "display": {
+        "title": {
+            "text": "Start Dying!",
+            "color": "light_purple",
+            "bold": true,
+            "italic": false,
+            "underlined": false,
+            "strikethrough": false,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "Craft some dyed sticks",
+            "color": "dark_green",
+            "bold": false,
+            "italic": false
+        },
+        "icon": {
+            "item": "dye_extension:lime_stick"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "Craft some dyed sticks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "dye_extension:dyed_sticks"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@
     {
         "A":
         {
-            "type": "minecraft:planks"
+            "tag": "minecraft:planks"
         },
         "B":
         {
