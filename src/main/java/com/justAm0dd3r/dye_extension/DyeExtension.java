@@ -1,5 +1,9 @@
 package com.justAm0dd3r.dye_extension;
 
+/*
+Author: justAm0dd3r
+ */
+
 import com.justAm0dd3r.dye_extension.item_groups.DyeExtensionTab;
 import com.justAm0dd3r.dye_extension.util.RegistryHandler;
 import net.minecraftforge.common.MinecraftForge;

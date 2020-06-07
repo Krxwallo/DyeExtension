@@ -1,12 +1,10 @@
 package com.justAm0dd3r.dye_extension.items;
 
-import com.justAm0dd3r.dye_extension.DyeExtension;
 import net.minecraft.item.AxeItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemTier;
+import net.minecraft.item.IItemTier;
 
 public class DyedAxe extends AxeItem {
-    public DyedAxe(ItemTier tier) {
-        super(tier, 6.0F, -3.1F, (new Item.Properties()).group(DyeExtension.TAB));
+    public DyedAxe(IItemTier tier, float attackDamageIn, float attackSpeedIn, Properties builder) {
+        super(tier, attackDamageIn, attackSpeedIn, builder);
     }
 }
