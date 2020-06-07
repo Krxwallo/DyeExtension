@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        " B ",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:cobblestone"
+        },
+        "B":
+        {
+            "item": "dye_extension:black_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:stone_pickaxe_black_handle",
+        "count": "1"
+    }
+}

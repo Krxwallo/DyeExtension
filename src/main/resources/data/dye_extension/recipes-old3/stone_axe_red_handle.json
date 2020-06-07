@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AA",
+        " BA",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:cobblestone"
+        },
+        "B":
+        {
+            "item": "dye_extension:red_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:stone_axe_red_handle",
+        "count": "1"
+    }
+}

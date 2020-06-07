@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " 00",
+        " 10",
+        " 1 "
+    ],
+
+    "key":
+    {
+        "0":
+        {
+            "item": "minecraft:golden_ingot"
+        },
+        "1":
+        {
+            "item": "dye_extension:pink_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:golden_axe_pink_handle",
+        "count": "1"
+    }
+}

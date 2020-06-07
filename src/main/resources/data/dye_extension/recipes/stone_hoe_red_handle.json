@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        " 00",
-        " 1 ",
-        " 1 "
+        " AA",
+        " B ",
+        " B "
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:cobblestone"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:red_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:stone_hoe_red_handle",
-        "count": "1"
+        "count": 1
     }
 }

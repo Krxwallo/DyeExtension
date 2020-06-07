@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        "0",
-        "0",
-        "1"
+        "A",
+        "A",
+        "B"
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:iron_ingot"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:magenta_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:iron_sword_magenta_handle",
-        "count": "1"
+        "count": 1
     }
 }

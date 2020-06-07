@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        " 00",
-        " 10",
-        " 1 "
+        "AA",
+        "BA",
+        "B "
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:iron_ingot"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:gray_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:iron_axe_gray_handle",
-        "count": "1"
+        "count": 1
     }
 }

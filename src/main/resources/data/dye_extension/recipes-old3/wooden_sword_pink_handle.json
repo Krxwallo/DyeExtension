@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A",
+        "A",
+        "B"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:planks"
+        },
+        "B":
+        {
+            "item": "dye_extension:pink_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:wooden_sword_pink_handle",
+        "count": "1"
+    }
+}

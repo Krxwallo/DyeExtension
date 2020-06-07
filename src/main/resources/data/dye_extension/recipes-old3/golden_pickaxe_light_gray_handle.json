@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        " B ",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:golden_ingot"
+        },
+        "B":
+        {
+            "item": "dye_extension:light_gray_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:golden_pickaxe_light_gray_handle",
+        "count": "1"
+    }
+}

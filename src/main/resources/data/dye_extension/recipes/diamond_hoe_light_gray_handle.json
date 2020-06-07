@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        " 00",
-        " 1 ",
-        " 1 "
+        " AA",
+        " B ",
+        " B "
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:diamond"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:light_gray_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:diamond_hoe_light_gray_handle",
-        "count": "1"
+        "count": 1
     }
 }

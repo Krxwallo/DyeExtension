@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " 00",
+        " 10",
+        " 1 "
+    ],
+
+    "key":
+    {
+        "0":
+        {
+            "item": "minecraft:planks"
+        },
+        "1":
+        {
+            "item": "dye_extension:purple_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:wooden_axe_purple_handle",
+        "count": "1"
+    }
+}

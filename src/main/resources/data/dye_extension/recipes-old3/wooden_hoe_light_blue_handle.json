@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AA",
+        " B ",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:planks"
+        },
+        "B":
+        {
+            "item": "dye_extension:light_blue_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:wooden_hoe_light_blue_handle",
+        "count": "1"
+    }
+}

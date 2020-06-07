@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        " 00",
-        " 10",
-        " 1 "
+        "AA",
+        "BA",
+        "B "
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:golden_ingot"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:white_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:golden_axe_white_handle",
-        "count": "1"
+        "count": 1
     }
 }

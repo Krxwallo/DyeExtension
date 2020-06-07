@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AA",
+        " BA",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:golden_ingot"
+        },
+        "B":
+        {
+            "item": "dye_extension:green_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:golden_axe_green_handle",
+        "count": "1"
+    }
+}

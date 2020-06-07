@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        "0",
-        "1",
-        "1"
+        "A",
+        "B",
+        "B"
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:iron_ingot"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:pink_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:iron_shovel_pink_handle",
-        "count": "1"
+        "count": 1
     }
 }

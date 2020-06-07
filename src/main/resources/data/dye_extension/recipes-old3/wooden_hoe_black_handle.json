@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AA",
+        " B ",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:planks"
+        },
+        "B":
+        {
+            "item": "dye_extension:black_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:wooden_hoe_black_handle",
+        "count": "1"
+    }
+}

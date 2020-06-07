@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "0",
+        "0",
+        "1"
+    ],
+
+    "key":
+    {
+        "0":
+        {
+            "item": "minecraft:golden_ingot"
+        },
+        "1":
+        {
+            "item": "dye_extension:magenta_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:golden_sword_magenta_handle",
+        "count": "1"
+    }
+}

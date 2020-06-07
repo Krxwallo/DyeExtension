@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        "000",
-        " 1 ",
-        " 1 "
+        "AAA",
+        " B ",
+        " B "
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:golden_ingot"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:green_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:golden_pickaxe_green_handle",
-        "count": "1"
+        "count": 1
     }
 }

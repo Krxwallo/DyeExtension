@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A",
+        "B",
+        "B"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:planks"
+        },
+        "B":
+        {
+            "item": "dye_extension:green_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:wooden_shovel_green_handle",
+        "count": "1"
+    }
+}

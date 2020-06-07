@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A",
+        "B",
+        "B"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:cobblestone"
+        },
+        "B":
+        {
+            "item": "dye_extension:green_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:stone_shovel_green_handle",
+        "count": "1"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AA",
+        " B ",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:cobblestone"
+        },
+        "B":
+        {
+            "item": "dye_extension:blue_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:stone_hoe_blue_handle",
+        "count": "1"
+    }
+}

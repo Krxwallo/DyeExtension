@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        "000",
-        " 1 ",
-        " 1 "
+        "AAA",
+        " B ",
+        " B "
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
-            "item": "minecraft:planks"
+            "type": "minecraft:planks"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:magenta_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:wooden_pickaxe_magenta_handle",
-        "count": "1"
+        "count": 1
     }
 }

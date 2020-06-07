@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A",
+        "A",
+        "B"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "B":
+        {
+            "item": "dye_extension:black_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:iron_sword_black_handle",
+        "count": "1"
+    }
+}

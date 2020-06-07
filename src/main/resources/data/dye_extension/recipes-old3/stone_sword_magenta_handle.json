@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A",
+        "A",
+        "B"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:cobblestone"
+        },
+        "B":
+        {
+            "item": "dye_extension:magenta_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:stone_sword_magenta_handle",
+        "count": "1"
+    }
+}

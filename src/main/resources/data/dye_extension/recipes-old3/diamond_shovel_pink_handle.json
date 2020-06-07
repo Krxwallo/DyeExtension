@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A",
+        "B",
+        "B"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:diamond"
+        },
+        "B":
+        {
+            "item": "dye_extension:pink_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:diamond_shovel_pink_handle",
+        "count": "1"
+    }
+}

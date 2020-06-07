@@ -3,18 +3,18 @@
 
     "pattern":
     [
-        "0",
-        "0",
-        "1"
+        "A",
+        "A",
+        "B"
     ],
 
     "key":
     {
-        "0":
+        "A":
         {
             "item": "minecraft:golden_ingot"
         },
-        "1":
+        "B":
         {
             "item": "dye_extension:cyan_stick"
         }
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:golden_sword_cyan_handle",
-        "count": "1"
+        "count": 1
     }
 }

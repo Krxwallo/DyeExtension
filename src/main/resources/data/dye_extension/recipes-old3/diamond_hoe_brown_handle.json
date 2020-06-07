@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AA",
+        " B ",
+        " B "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:diamond"
+        },
+        "B":
+        {
+            "item": "dye_extension:brown_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:diamond_hoe_brown_handle",
+        "count": "1"
+    }
+}
