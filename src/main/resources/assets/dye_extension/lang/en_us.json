@@ -1,4 +1,7 @@
 {
+  "*Tab*": "",
+  "itemGroup.dyeExtensionTab": "Dye Extension",
+
   "*Sticks*": "",
   "item.dye_extension.red_stick": "Red Stick",
   "item.dye_extension.blue_stick": "Blue Stick",
