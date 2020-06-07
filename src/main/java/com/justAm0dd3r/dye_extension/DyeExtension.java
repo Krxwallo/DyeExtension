@@ -11,10 +11,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(DyeExtension.MOD_ID)
+@Mod(Reference.MOD_ID)
 public class DyeExtension {
 
-    public static final String MOD_ID = "dye_extension";
+
     private static final Logger LOGGER = LogManager.getLogger();
 
     public DyeExtension() {

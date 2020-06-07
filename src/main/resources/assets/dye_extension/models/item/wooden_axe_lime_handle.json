@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+    "textures": {
+      "layer0": "dye_extension:items/wooden_axe_lime_handle"
+  }
+}

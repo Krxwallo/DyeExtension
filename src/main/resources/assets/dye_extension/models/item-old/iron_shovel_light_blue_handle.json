@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "dye_extension:items/iron_shovel_light_blue_handle"
+  }
+}

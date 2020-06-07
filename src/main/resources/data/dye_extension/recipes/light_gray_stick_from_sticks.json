@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "  S",
+        " D ",
+        "S  "
+    ],
+
+    "key":
+    {
+        "S":
+        {
+            "item": "minecraft:stick"
+        },
+        "D":
+        {
+            "item": "minecraft:light_gray_dye"
+        }
+    },
+
+    "result":
+    {
+        "item": "dye_extension:light_gray_stick",
+        "count": 3
+    }
+}

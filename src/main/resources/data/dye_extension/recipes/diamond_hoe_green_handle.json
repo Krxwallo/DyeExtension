@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " 00",
+        " 1 ",
+        " 1 "
+    ],
+
+    "key":
+    {
+        "0":
+        {
+            "item": "minecraft:diamond"
+        },
+        "1":
+        {
+            "item": "dye_extension:green_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:diamond_hoe_green_handle",
+        "count": "1"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "dye_extension:items/iron_axe_orange_handle"
+  }
+}

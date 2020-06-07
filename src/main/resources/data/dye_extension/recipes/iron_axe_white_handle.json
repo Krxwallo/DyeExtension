@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " 00",
+        " 10",
+        " 1 "
+    ],
+
+    "key":
+    {
+        "0":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "1":
+        {
+            "item": "dye_extension:white_stick"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:iron_axe_white_handle",
+        "count": "1"
+    }
+}
