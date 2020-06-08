@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "  A",
+        " B ",
+        "A  "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:stick"
+        },
+        "B":
+        {
+            "item":"minecraft:orange_dye"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:orange_stick",
+        "count": 3
+    }
+}
