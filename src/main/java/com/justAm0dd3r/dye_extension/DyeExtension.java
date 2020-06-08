@@ -4,7 +4,9 @@ package com.justAm0dd3r.dye_extension;
 Author: justAm0dd3r
  */
 
-import com.justAm0dd3r.dye_extension.item_groups.DyeExtensionTab;
+import com.justAm0dd3r.dye_extension.item_groups.DyedBlocksTab;
+import com.justAm0dd3r.dye_extension.item_groups.DyedSticksTab;
+import com.justAm0dd3r.dye_extension.item_groups.DyedToolsTab;
 import com.justAm0dd3r.dye_extension.util.RegistryHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -42,5 +44,7 @@ public class DyeExtension {
         // do something that can only be done on the client
     }
 
-    public static final DyeExtensionTab TAB = new DyeExtensionTab();
+    public static final DyedSticksTab DYED_STICKS_TAB = new DyedSticksTab();
+    public static final DyedToolsTab DYED_TOOLS_TAB = new DyedToolsTab();
+    public static final DyedBlocksTab DYED_BLOCKS_TAB = new DyedBlocksTab();
 }

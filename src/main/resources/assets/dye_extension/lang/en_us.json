@@ -1,6 +1,8 @@
 {
   "*Tab*": "",
-  "itemGroup.dyeExtensionTab": "Dye Extension",
+  "itemGroup.dyedToolsTab": "Dyed Tools",
+  "itemGroup.dyedBlocksTab": "Dyed Blocks",
+  "itemGroup.dyedSticksTab": "Dyed Sticks",
 
   "*Sticks*": "",
   "item.dye_extension.red_stick": "Red Stick",
@@ -419,5 +421,24 @@
   "item.dye_extension.stone_sword_yellow_handle": "Stone Sword (Yellow Handle)",
   "item.dye_extension.iron_sword_yellow_handle": "Iron Sword (Yellow Handle)",
   "item.dye_extension.golden_sword_yellow_handle": "Gold Sword (Yellow Handle)",
-  "item.dye_extension.diamond_sword_yellow_handle": "Diamond Sword (Yellow Handle)"
+  "item.dye_extension.diamond_sword_yellow_handle": "Diamond Sword (Yellow Handle)",
+
+  "*Blocks*": "",
+  "block.dye_extension.test_block": "Test Block",
+  "block.dye_extension.black_cobblestone": "Black Cobblestone",
+  "block.dye_extension.blue_cobblestone": "Blue Cobblestone",
+  "block.dye_extension.brown_cobblestone": "Brown Cobblestone",
+  "block.dye_extension.cyan_cobblestone": "Cyan Cobblestone",
+  "block.dye_extension.gray_cobblestone": "Gray Cobblestone",
+  "block.dye_extension.green_cobblestone": "Green Cobblestone",
+  "block.dye_extension.light_blue_cobblestone": "Light Blue Cobblestone",
+  "block.dye_extension.light_gray_cobblestone": "Light Gray Cobblestone",
+  "block.dye_extension.lime_cobblestone": "Lime Cobblestone",
+  "block.dye_extension.magenta_cobblestone": "Magenta Cobblestone",
+  "block.dye_extension.orange_cobblestone": "Orange Cobblestone",
+  "block.dye_extension.pink_cobblestone": "Pink Cobblestone",
+  "block.dye_extension.purple_cobblestone": "Purple Cobblestone",
+  "block.dye_extension.red_cobblestone": "Red Cobblestone",
+  "block.dye_extension.white_cobblestone": "White Cobblestone",
+  "block.dye_extension.yellow_cobblestone": "Yellow Cobblestone"
 }
