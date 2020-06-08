@@ -3,7 +3,6 @@ package com.justAm0dd3r.dye_extension.util.registry_types;
 import com.justAm0dd3r.dye_extension.Reference;
 import com.justAm0dd3r.dye_extension.blocks.BlockItemBase;
 import com.justAm0dd3r.dye_extension.blocks.DyedCobblestoneBlock;
-import com.justAm0dd3r.dye_extension.blocks.TestBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
