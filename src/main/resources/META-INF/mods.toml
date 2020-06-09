@@ -47,6 +47,6 @@ Adds dyed sticks and all kinds of tools with dyed handles to the game.
 [[dependencies.dye_extension]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.15.1, 1.15.2]"
     ordering="NONE"
     side="BOTH"

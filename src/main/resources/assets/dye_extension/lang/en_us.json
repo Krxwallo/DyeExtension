@@ -1,10 +1,10 @@
 {
-  "*Tab*": "",
+  "*Tab*": "===============================================",
   "itemGroup.dyedToolsTab": "Dyed Tools",
   "itemGroup.dyedBlocksTab": "Dyed Blocks",
   "itemGroup.dyedSticksTab": "Dyed Sticks",
 
-  "*Sticks*": "",
+  "*Dyed Sticks*": "===============================================",
   "item.dye_extension.red_stick": "Red Stick",
   "item.dye_extension.blue_stick": "Blue Stick",
   "item.dye_extension.brown_stick": "Brown Stick",
@@ -22,6 +22,7 @@
   "item.dye_extension.green_stick": "Green Stick",
   "item.dye_extension.orange_stick": "Orange Stick",
 
+  "*Dyed Tools*": "===============================================",
   "item.dye_extension.wooden_axe_black_handle": "Wooden Axe (Black Handle)",
   "item.dye_extension.stone_axe_black_handle": "Stone Axe (Black Handle)",
   "item.dye_extension.iron_axe_black_handle": "Iron Axe (Black Handle)",
@@ -423,7 +424,7 @@
   "item.dye_extension.golden_sword_yellow_handle": "Gold Sword (Yellow Handle)",
   "item.dye_extension.diamond_sword_yellow_handle": "Diamond Sword (Yellow Handle)",
 
-  "*Blocks*": "",
+  "*Blocks*": "===============================================",
   "block.dye_extension.black_cobblestone": "Black Cobblestone",
   "block.dye_extension.blue_cobblestone": "Blue Cobblestone",
   "block.dye_extension.brown_cobblestone": "Brown Cobblestone",
@@ -439,5 +440,23 @@
   "block.dye_extension.purple_cobblestone": "Purple Cobblestone",
   "block.dye_extension.red_cobblestone": "Red Cobblestone",
   "block.dye_extension.white_cobblestone": "White Cobblestone",
-  "block.dye_extension.yellow_cobblestone": "Yellow Cobblestone"
+  "block.dye_extension.yellow_cobblestone": "Yellow Cobblestone",
+
+  "(*Furnaces*)": "===============================================",
+  "block.dye_extension.black_furnace": "Black Furnace",
+  "block.dye_extension.blue_furnace": "Blue Furnace",
+  "block.dye_extension.brown_furnace": "Brown Furnace",
+  "block.dye_extension.cyan_furnace": "Cyan Furnace",
+  "block.dye_extension.gray_furnace": "Gray Furnace",
+  "block.dye_extension.green_furnace": "Green Furnace",
+  "block.dye_extension.light_blue_furnace": "Light Blue Furnace",
+  "block.dye_extension.light_gray_furnace": "Light Gray Furnace",
+  "block.dye_extension.lime_furnace": "Lime Furnace",
+  "block.dye_extension.magenta_furnace": "Magenta Furnace",
+  "block.dye_extension.orange_furnace": "Orange Furnace",
+  "block.dye_extension.pink_furnace": "Pink Furnace",
+  "block.dye_extension.purple_furnace": "Purple Furnace",
+  "block.dye_extension.red_furnace": "Red Furnace",
+  "block.dye_extension.white_furnace": "White Furnace",
+  "block.dye_extension.yellow_furnace": "Yellow Furnace"
 }

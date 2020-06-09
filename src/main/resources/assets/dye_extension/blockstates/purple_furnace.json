@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=north,lit=false": { "model": "dye_extension:block/purple_furnace" },
+        "facing=south,lit=false": { "model": "dye_extension:block/purple_furnace", "y": 180 },
+        "facing=west,lit=false":  { "model": "dye_extension:block/purple_furnace", "y": 270 },
+        "facing=east,lit=false":  { "model": "dye_extension:block/purple_furnace", "y": 90 },
+        "facing=north,lit=true": { "model":  "dye_extension:block/purple_furnace_on" },
+        "facing=south,lit=true": { "model":  "dye_extension:block/purple_furnace_on", "y": 180 },
+        "facing=west,lit=true":  { "model":  "dye_extension:block/purple_furnace_on", "y": 270 },
+        "facing=east,lit=true":  { "model":  "dye_extension:block/purple_furnace_on", "y": 90 }
+    }
+}

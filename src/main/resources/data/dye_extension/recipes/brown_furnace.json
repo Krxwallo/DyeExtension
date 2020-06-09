@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "A A",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "dye_extension:brown_cobblestone"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:brown_furnace",
+        "count": 1
+    }
+}
