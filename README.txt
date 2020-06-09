@@ -1,3 +1,5 @@
+The OFFICIAL version of this mod can be downloaded here: https://www.curseforge.com/minecraft/mc-mods/dye-extension/ .
+
 -------------------------------------------
 Source installation information for modders
 -------------------------------------------
