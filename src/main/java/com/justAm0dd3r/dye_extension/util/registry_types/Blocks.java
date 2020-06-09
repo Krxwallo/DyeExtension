@@ -42,11 +42,7 @@ public class Blocks {
     public static final RegistryObject<Block> WHITE_COBBLESTONE = BLOCKS.register("white_cobblestone", DyedCobblestoneBlock::new);
     public static final RegistryObject<Block> YELLOW_COBBLESTONE = BLOCKS.register("yellow_cobblestone", DyedCobblestoneBlock::new);
 
-
-    // Block Items
-    public static final RegistryObject<Item> TEST_BLOCK_ITEM = ITEMS.register("test_block", () -> new BlockItemBase(TEST_BLOCK.get()));
-
-    // AUTO-GEN
+    // AUTO-GEN Block Items
     public static final RegistryObject<Item> BLACK_COBBLESTONE_ITEM = ITEMS.register("black_cobblestone", () -> new BlockItemBase(BLACK_COBBLESTONE.get()));
     public static final RegistryObject<Item> BLUE_COBBLESTONE_ITEM = ITEMS.register("blue_cobblestone", () -> new BlockItemBase(BLUE_COBBLESTONE.get()));
     public static final RegistryObject<Item> BROWN_COBBLESTONE_ITEM = ITEMS.register("brown_cobblestone", () -> new BlockItemBase(BROWN_COBBLESTONE.get()));

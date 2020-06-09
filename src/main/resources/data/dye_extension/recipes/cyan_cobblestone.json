@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:cobblestone"
+        },
+        "B":
+        {
+            "item": "minecraft:cyan_dye"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:cyan_cobblestone",
+        "count": 8
+    }
+}
