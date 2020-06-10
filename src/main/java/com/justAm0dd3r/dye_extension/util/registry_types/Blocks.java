@@ -21,9 +21,6 @@ public class Blocks {
 
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Reference.MOD_ID);
 
-    // Blocks
-    public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block", DyedCobblestoneBlock::new);
-    // COBBLESTONE = BLOCKS.register("cobblestone", new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0F, 6.0F)));
 
     // AUTO-GEN
     public static final RegistryObject<Block> BLACK_COBBLESTONE = BLOCKS.register("black_cobblestone", DyedCobblestoneBlock::new);
