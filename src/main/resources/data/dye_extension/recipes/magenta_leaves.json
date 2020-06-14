@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "tag": "leaves"
+        },
+        "B":
+        {
+            "item": "magenta_dye"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:magenta_leaves",
+        "count": 8
+    }
+}

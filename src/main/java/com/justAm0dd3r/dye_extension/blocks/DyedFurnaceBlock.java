@@ -15,6 +15,7 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
+/*
 
 public class DyedFurnaceBlock extends AbstractFurnaceBlock {
     public DyedFurnaceBlock() {
@@ -44,3 +45,4 @@ public class DyedFurnaceBlock extends AbstractFurnaceBlock {
         return new DyedFurnaceTileEntity();
     }
 }
+*/

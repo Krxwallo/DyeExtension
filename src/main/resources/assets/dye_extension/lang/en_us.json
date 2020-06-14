@@ -458,5 +458,23 @@
   "block.dye_extension.purple_furnace": "Purple Furnace",
   "block.dye_extension.red_furnace": "Red Furnace",
   "block.dye_extension.white_furnace": "White Furnace",
-  "block.dye_extension.yellow_furnace": "Yellow Furnace"
+  "block.dye_extension.yellow_furnace": "Yellow Furnace",
+
+  "*Dyed Leaves*": "===============================================",
+  "block.dye_extension.black_leaves": "Black Leaves",
+  "block.dye_extension.blue_leaves": "Blue Leaves",
+  "block.dye_extension.brown_leaves": "Brown Leaves",
+  "block.dye_extension.cyan_leaves": "Cyan Leaves",
+  "block.dye_extension.gray_leaves": "Gray Leaves",
+  "block.dye_extension.green_leaves": "Green Leaves",
+  "block.dye_extension.light_blue_leaves": "Light Blue Leaves",
+  "block.dye_extension.light_gray_leaves": "Light Gray Leaves",
+  "block.dye_extension.lime_leaves": "Lime Leaves",
+  "block.dye_extension.magenta_leaves": "Magenta Leaves",
+  "block.dye_extension.orange_leaves": "Orange Leaves",
+  "block.dye_extension.pink_leaves": "Pink Leaves",
+  "block.dye_extension.purple_leaves": "Purple Leaves",
+  "block.dye_extension.red_leaves": "Red Leaves",
+  "block.dye_extension.white_leaves": "White Leaves",
+  "block.dye_extension.yellow_leaves": "Yellow Leaves"
 }

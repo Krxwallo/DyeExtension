@@ -3,7 +3,8 @@ package com.justAm0dd3r.dye_extension.util.registry_types;
 import com.justAm0dd3r.dye_extension.Reference;
 import com.justAm0dd3r.dye_extension.blocks.BlockItemBase;
 import com.justAm0dd3r.dye_extension.blocks.DyedCobblestoneBlock;
-import com.justAm0dd3r.dye_extension.blocks.DyedFurnaceBlock;
+//import com.justAm0dd3r.dye_extension.blocks.DyedFurnaceBlock;
+import com.justAm0dd3r.dye_extension.blocks.DyedLeavesBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -21,6 +22,40 @@ public class Blocks {
 
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Reference.MOD_ID);
 
+
+    // Auto-GEN dyed leaves
+    public static final RegistryObject<Block> BLACK_LEAVES = BLOCKS.register("black_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> BLACK_LEAVES_ITEM = ITEMS.register("black_leaves", () -> new BlockItemBase(BLACK_LEAVES.get()));
+    public static final RegistryObject<Block> BLUE_LEAVES = BLOCKS.register("blue_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> BLUE_LEAVES_ITEM = ITEMS.register("blue_leaves", () -> new BlockItemBase(BLUE_LEAVES.get()));
+    public static final RegistryObject<Block> BROWN_LEAVES = BLOCKS.register("brown_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> BROWN_LEAVES_ITEM = ITEMS.register("brown_leaves", () -> new BlockItemBase(BROWN_LEAVES.get()));
+    public static final RegistryObject<Block> CYAN_LEAVES = BLOCKS.register("cyan_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> CYAN_LEAVES_ITEM = ITEMS.register("cyan_leaves", () -> new BlockItemBase(CYAN_LEAVES.get()));
+    public static final RegistryObject<Block> GRAY_LEAVES = BLOCKS.register("gray_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> GRAY_LEAVES_ITEM = ITEMS.register("gray_leaves", () -> new BlockItemBase(GRAY_LEAVES.get()));
+    public static final RegistryObject<Block> GREEN_LEAVES = BLOCKS.register("green_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> GREEN_LEAVES_ITEM = ITEMS.register("green_leaves", () -> new BlockItemBase(GREEN_LEAVES.get()));
+    public static final RegistryObject<Block> LIGHT_BLUE_LEAVES = BLOCKS.register("light_blue_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> LIGHT_BLUE_LEAVES_ITEM = ITEMS.register("light_blue_leaves", () -> new BlockItemBase(LIGHT_BLUE_LEAVES.get()));
+    public static final RegistryObject<Block> LIGHT_GRAY_LEAVES = BLOCKS.register("light_gray_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> LIGHT_GRAY_LEAVES_ITEM = ITEMS.register("light_gray_leaves", () -> new BlockItemBase(LIGHT_GRAY_LEAVES.get()));
+    public static final RegistryObject<Block> LIME_LEAVES = BLOCKS.register("lime_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> LIME_LEAVES_ITEM = ITEMS.register("lime_leaves", () -> new BlockItemBase(LIME_LEAVES.get()));
+    public static final RegistryObject<Block> MAGENTA_LEAVES = BLOCKS.register("magenta_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> MAGENTA_LEAVES_ITEM = ITEMS.register("magenta_leaves", () -> new BlockItemBase(MAGENTA_LEAVES.get()));
+    public static final RegistryObject<Block> ORANGE_LEAVES = BLOCKS.register("orange_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> ORANGE_LEAVES_ITEM = ITEMS.register("orange_leaves", () -> new BlockItemBase(ORANGE_LEAVES.get()));
+    public static final RegistryObject<Block> PINK_LEAVES = BLOCKS.register("pink_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> PINK_LEAVES_ITEM = ITEMS.register("pink_leaves", () -> new BlockItemBase(PINK_LEAVES.get()));
+    public static final RegistryObject<Block> PURPLE_LEAVES = BLOCKS.register("purple_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> PURPLE_LEAVES_ITEM = ITEMS.register("purple_leaves", () -> new BlockItemBase(PURPLE_LEAVES.get()));
+    public static final RegistryObject<Block> RED_LEAVES = BLOCKS.register("red_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> RED_LEAVES_ITEM = ITEMS.register("red_leaves", () -> new BlockItemBase(RED_LEAVES.get()));
+    public static final RegistryObject<Block> WHITE_LEAVES = BLOCKS.register("white_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> WHITE_LEAVES_ITEM = ITEMS.register("white_leaves", () -> new BlockItemBase(WHITE_LEAVES.get()));
+    public static final RegistryObject<Block> YELLOW_LEAVES = BLOCKS.register("yellow_leaves", DyedLeavesBlock::new);
+    public static final RegistryObject<Item> YELLOW_LEAVES_ITEM = ITEMS.register("yellow_leaves", () -> new BlockItemBase(YELLOW_LEAVES.get()));
 
     // AUTO-GEN
     public static final RegistryObject<Block> BLACK_COBBLESTONE = BLOCKS.register("black_cobblestone", DyedCobblestoneBlock::new);
@@ -59,7 +94,7 @@ public class Blocks {
     public static final RegistryObject<Item> YELLOW_COBBLESTONE_ITEM = ITEMS.register("yellow_cobblestone", () -> new BlockItemBase(YELLOW_COBBLESTONE.get()));
 
     // AUTO-GEN Furnace Blocks and Block Items
-    public static final RegistryObject<Block> BLACK_FURNACE = BLOCKS.register("black_furnace", DyedFurnaceBlock::new);
+    /*public static final RegistryObject<Block> BLACK_FURNACE = BLOCKS.register("black_furnace", DyedFurnaceBlock::new);
     public static final RegistryObject<Item> BLACK_FURNACE_ITEM = ITEMS.register("black_furnace", () -> new BlockItemBase(BLACK_FURNACE.get()));
     public static final RegistryObject<Block> BLUE_FURNACE = BLOCKS.register("blue_furnace", DyedFurnaceBlock::new);
     public static final RegistryObject<Item> BLUE_FURNACE_ITEM = ITEMS.register("blue_furnace", () -> new BlockItemBase(BLUE_FURNACE.get()));
@@ -90,6 +125,6 @@ public class Blocks {
     public static final RegistryObject<Block> WHITE_FURNACE = BLOCKS.register("white_furnace", DyedFurnaceBlock::new);
     public static final RegistryObject<Item> WHITE_FURNACE_ITEM = ITEMS.register("white_furnace", () -> new BlockItemBase(WHITE_FURNACE.get()));
     public static final RegistryObject<Block> YELLOW_FURNACE = BLOCKS.register("yellow_furnace", DyedFurnaceBlock::new);
-    public static final RegistryObject<Item> YELLOW_FURNACE_ITEM = ITEMS.register("yellow_furnace", () -> new BlockItemBase(YELLOW_FURNACE.get()));
+    public static final RegistryObject<Item> YELLOW_FURNACE_ITEM = ITEMS.register("yellow_furnace", () -> new BlockItemBase(YELLOW_FURNACE.get()));*/
 
 }
