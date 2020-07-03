@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "dye_extension:blocks/yellow_stone",
+        "top":    "dye_extension:blocks/yellow_stone",
+        "side":   "dye_extension:blocks/yellow_stone"
+    }
+}

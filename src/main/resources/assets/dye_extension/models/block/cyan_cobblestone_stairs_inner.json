@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "dye_extension:blocks/cyan_cobblestone",
+        "top":    "dye_extension:blocks/cyan_cobblestone",
+        "side":   "dye_extension:blocks/cyan_cobblestone"
+    }
+}

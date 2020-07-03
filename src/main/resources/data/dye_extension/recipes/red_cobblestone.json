@@ -12,11 +12,11 @@
     {
         "A":
         {
-            "item": "minecraft:cobblestone"
+            "item": "cobblestone"
         },
         "B":
         {
-            "item": "minecraft:red_dye"
+            "item": "red_dye"
         }
 
     },

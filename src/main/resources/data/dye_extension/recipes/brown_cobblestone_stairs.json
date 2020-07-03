@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A  ",
+        "AA ",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "dye_extension:brown_cobblestone"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:brown_cobblestone_stairs",
+        "count": 6
+    }
+}

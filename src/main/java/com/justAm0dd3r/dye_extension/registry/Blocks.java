@@ -3,7 +3,6 @@ package com.justAm0dd3r.dye_extension.registry;
 import com.justAm0dd3r.dye_extension.blocks.*;
 import com.justAm0dd3r.dye_extension.reference.Reference;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.item.Item;
@@ -11,8 +10,6 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.function.Supplier;
 
 import static com.justAm0dd3r.dye_extension.registry.Items.ITEMS;
 
@@ -26,8 +23,6 @@ public class Blocks {
 
 
     // Auto-GEN dyed (polished) andesite
-    // === COPY FILE ===
-// Copy the contents of this file into your mod item deferred registry object holder class.
 
     public static final RegistryObject<Block> BLACK_ANDESITE = BLOCKS.register("black_andesite", DyedAndesiteBlock::new);
     public static final RegistryObject<Item> BLACK_ANDESITE_ITEM = ITEMS.register("black_andesite", () -> new BlockItemBase(BLACK_ANDESITE.get()));
@@ -147,6 +142,23 @@ public class Blocks {
     public static final RegistryObject<Block> WHITE_COBBLESTONE = BLOCKS.register("white_cobblestone", DyedCobblestoneBlock::new);
     public static final RegistryObject<Block> YELLOW_COBBLESTONE = BLOCKS.register("yellow_cobblestone", DyedCobblestoneBlock::new);
 
+    public static final RegistryObject<Block> BLACK_STONE = BLOCKS.register("black_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> BLUE_STONE = BLOCKS.register("blue_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> BROWN_STONE = BLOCKS.register("brown_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> CYAN_STONE = BLOCKS.register("cyan_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> GRAY_STONE = BLOCKS.register("gray_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> GREEN_STONE = BLOCKS.register("green_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> LIGHT_BLUE_STONE = BLOCKS.register("light_blue_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> LIGHT_GRAY_STONE = BLOCKS.register("light_gray_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> LIME_STONE = BLOCKS.register("lime_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> MAGENTA_STONE = BLOCKS.register("magenta_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> ORANGE_STONE = BLOCKS.register("orange_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> PINK_STONE = BLOCKS.register("pink_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> PURPLE_STONE = BLOCKS.register("purple_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> RED_STONE = BLOCKS.register("red_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> WHITE_STONE = BLOCKS.register("white_stone", DyedStoneBlock::new);
+    public static final RegistryObject<Block> YELLOW_STONE = BLOCKS.register("yellow_stone", DyedStoneBlock::new);
+
     // AUTO-GEN Block Items
     public static final RegistryObject<Item> BLACK_COBBLESTONE_ITEM = ITEMS.register("black_cobblestone", () -> new BlockItemBase(BLACK_COBBLESTONE.get()));
     public static final RegistryObject<Item> BLUE_COBBLESTONE_ITEM = ITEMS.register("blue_cobblestone", () -> new BlockItemBase(BLUE_COBBLESTONE.get()));
@@ -164,6 +176,23 @@ public class Blocks {
     public static final RegistryObject<Item> RED_COBBLESTONE_ITEM = ITEMS.register("red_cobblestone", () -> new BlockItemBase(RED_COBBLESTONE.get()));
     public static final RegistryObject<Item> WHITE_COBBLESTONE_ITEM = ITEMS.register("white_cobblestone", () -> new BlockItemBase(WHITE_COBBLESTONE.get()));
     public static final RegistryObject<Item> YELLOW_COBBLESTONE_ITEM = ITEMS.register("yellow_cobblestone", () -> new BlockItemBase(YELLOW_COBBLESTONE.get()));
+
+    public static final RegistryObject<Item> BLACK_STONE_ITEM = ITEMS.register("black_stone", () -> new BlockItemBase(BLACK_STONE.get()));
+    public static final RegistryObject<Item> BLUE_STONE_ITEM = ITEMS.register("blue_stone", () -> new BlockItemBase(BLUE_STONE.get()));
+    public static final RegistryObject<Item> BROWN_STONE_ITEM = ITEMS.register("brown_stone", () -> new BlockItemBase(BROWN_STONE.get()));
+    public static final RegistryObject<Item> CYAN_STONE_ITEM = ITEMS.register("cyan_stone", () -> new BlockItemBase(CYAN_STONE.get()));
+    public static final RegistryObject<Item> GRAY_STONE_ITEM = ITEMS.register("gray_stone", () -> new BlockItemBase(GRAY_STONE.get()));
+    public static final RegistryObject<Item> GREEN_STONE_ITEM = ITEMS.register("green_stone", () -> new BlockItemBase(GREEN_STONE.get()));
+    public static final RegistryObject<Item> LIGHT_BLUE_STONE_ITEM = ITEMS.register("light_blue_stone", () -> new BlockItemBase(LIGHT_BLUE_STONE.get()));
+    public static final RegistryObject<Item> LIGHT_GRAY_STONE_ITEM = ITEMS.register("light_gray_stone", () -> new BlockItemBase(LIGHT_GRAY_STONE.get()));
+    public static final RegistryObject<Item> LIME_STONE_ITEM = ITEMS.register("lime_stone", () -> new BlockItemBase(LIME_STONE.get()));
+    public static final RegistryObject<Item> MAGENTA_STONE_ITEM = ITEMS.register("magenta_stone", () -> new BlockItemBase(MAGENTA_STONE.get()));
+    public static final RegistryObject<Item> ORANGE_STONE_ITEM = ITEMS.register("orange_stone", () -> new BlockItemBase(ORANGE_STONE.get()));
+    public static final RegistryObject<Item> PINK_STONE_ITEM = ITEMS.register("pink_stone", () -> new BlockItemBase(PINK_STONE.get()));
+    public static final RegistryObject<Item> PURPLE_STONE_ITEM = ITEMS.register("purple_stone", () -> new BlockItemBase(PURPLE_STONE.get()));
+    public static final RegistryObject<Item> RED_STONE_ITEM = ITEMS.register("red_stone", () -> new BlockItemBase(RED_STONE.get()));
+    public static final RegistryObject<Item> WHITE_STONE_ITEM = ITEMS.register("white_stone", () -> new BlockItemBase(WHITE_STONE.get()));
+    public static final RegistryObject<Item> YELLOW_STONE_ITEM = ITEMS.register("yellow_stone", () -> new BlockItemBase(YELLOW_STONE.get()));
 
     // AUTO-GEN Furnace Blocks and Block Items
     /*public static final RegistryObject<Block> BLACK_FURNACE = BLOCKS.register("black_furnace", DyedFurnaceBlock::new);
@@ -328,5 +357,136 @@ public class Blocks {
     public static final RegistryObject<Item> YELLOW_POLISHED_ANDESITE_STAIRS_ITEM = ITEMS.register("yellow_polished_andesite_stairs", () -> new BlockItemBase(YELLOW_POLISHED_ANDESITE_STAIRS.get()));
     public static final RegistryObject<Block> YELLOW_POLISHED_ANDESITE_SLAB= BLOCKS.register("yellow_polished_andesite_slab", () -> new SlabBlock(Block.Properties.from(YELLOW_POLISHED_ANDESITE.get())));
     public static final RegistryObject<Item> YELLOW_POLISHED_ANDESITE_SLAB_ITEM = ITEMS.register("yellow_polished_andesite_slab", () -> new BlockItemBase(YELLOW_POLISHED_ANDESITE_SLAB.get()));
+
+    // Auto-GEN dyed cobble(stone) stairs and slabs
+    public static final RegistryObject<Block> BLACK_COBBLESTONE_STAIRS= BLOCKS.register("black_cobblestone_stairs", () -> new StairsBlock(() -> BLACK_COBBLESTONE.get().getDefaultState(), Block.Properties.from(BLACK_COBBLESTONE.get())));
+    public static final RegistryObject<Item> BLACK_COBBLESTONE_STAIRS_ITEM = ITEMS.register("black_cobblestone_stairs", () -> new BlockItemBase(BLACK_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> BLACK_COBBLESTONE_SLAB= BLOCKS.register("black_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(BLACK_COBBLESTONE.get())));
+    public static final RegistryObject<Item> BLACK_COBBLESTONE_SLAB_ITEM = ITEMS.register("black_cobblestone_slab", () -> new BlockItemBase(BLACK_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> BLUE_COBBLESTONE_STAIRS= BLOCKS.register("blue_cobblestone_stairs", () -> new StairsBlock(() -> BLUE_COBBLESTONE.get().getDefaultState(), Block.Properties.from(BLUE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> BLUE_COBBLESTONE_STAIRS_ITEM = ITEMS.register("blue_cobblestone_stairs", () -> new BlockItemBase(BLUE_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> BLUE_COBBLESTONE_SLAB= BLOCKS.register("blue_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(BLUE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> BLUE_COBBLESTONE_SLAB_ITEM = ITEMS.register("blue_cobblestone_slab", () -> new BlockItemBase(BLUE_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> BROWN_COBBLESTONE_STAIRS= BLOCKS.register("brown_cobblestone_stairs", () -> new StairsBlock(() -> BROWN_COBBLESTONE.get().getDefaultState(), Block.Properties.from(BROWN_COBBLESTONE.get())));
+    public static final RegistryObject<Item> BROWN_COBBLESTONE_STAIRS_ITEM = ITEMS.register("brown_cobblestone_stairs", () -> new BlockItemBase(BROWN_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> BROWN_COBBLESTONE_SLAB= BLOCKS.register("brown_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(BROWN_COBBLESTONE.get())));
+    public static final RegistryObject<Item> BROWN_COBBLESTONE_SLAB_ITEM = ITEMS.register("brown_cobblestone_slab", () -> new BlockItemBase(BROWN_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> CYAN_COBBLESTONE_STAIRS= BLOCKS.register("cyan_cobblestone_stairs", () -> new StairsBlock(() -> CYAN_COBBLESTONE.get().getDefaultState(), Block.Properties.from(CYAN_COBBLESTONE.get())));
+    public static final RegistryObject<Item> CYAN_COBBLESTONE_STAIRS_ITEM = ITEMS.register("cyan_cobblestone_stairs", () -> new BlockItemBase(CYAN_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> CYAN_COBBLESTONE_SLAB= BLOCKS.register("cyan_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(CYAN_COBBLESTONE.get())));
+    public static final RegistryObject<Item> CYAN_COBBLESTONE_SLAB_ITEM = ITEMS.register("cyan_cobblestone_slab", () -> new BlockItemBase(CYAN_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> GRAY_COBBLESTONE_STAIRS= BLOCKS.register("gray_cobblestone_stairs", () -> new StairsBlock(() -> GRAY_COBBLESTONE.get().getDefaultState(), Block.Properties.from(GRAY_COBBLESTONE.get())));
+    public static final RegistryObject<Item> GRAY_COBBLESTONE_STAIRS_ITEM = ITEMS.register("gray_cobblestone_stairs", () -> new BlockItemBase(GRAY_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> GRAY_COBBLESTONE_SLAB= BLOCKS.register("gray_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(GRAY_COBBLESTONE.get())));
+    public static final RegistryObject<Item> GRAY_COBBLESTONE_SLAB_ITEM = ITEMS.register("gray_cobblestone_slab", () -> new BlockItemBase(GRAY_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> GREEN_COBBLESTONE_STAIRS= BLOCKS.register("green_cobblestone_stairs", () -> new StairsBlock(() -> GREEN_COBBLESTONE.get().getDefaultState(), Block.Properties.from(GREEN_COBBLESTONE.get())));
+    public static final RegistryObject<Item> GREEN_COBBLESTONE_STAIRS_ITEM = ITEMS.register("green_cobblestone_stairs", () -> new BlockItemBase(GREEN_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> GREEN_COBBLESTONE_SLAB= BLOCKS.register("green_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(GREEN_COBBLESTONE.get())));
+    public static final RegistryObject<Item> GREEN_COBBLESTONE_SLAB_ITEM = ITEMS.register("green_cobblestone_slab", () -> new BlockItemBase(GREEN_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> LIGHT_BLUE_COBBLESTONE_STAIRS= BLOCKS.register("light_blue_cobblestone_stairs", () -> new StairsBlock(() -> LIGHT_BLUE_COBBLESTONE.get().getDefaultState(), Block.Properties.from(LIGHT_BLUE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> LIGHT_BLUE_COBBLESTONE_STAIRS_ITEM = ITEMS.register("light_blue_cobblestone_stairs", () -> new BlockItemBase(LIGHT_BLUE_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> LIGHT_BLUE_COBBLESTONE_SLAB= BLOCKS.register("light_blue_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(LIGHT_BLUE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> LIGHT_BLUE_COBBLESTONE_SLAB_ITEM = ITEMS.register("light_blue_cobblestone_slab", () -> new BlockItemBase(LIGHT_BLUE_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> LIGHT_GRAY_COBBLESTONE_STAIRS= BLOCKS.register("light_gray_cobblestone_stairs", () -> new StairsBlock(() -> LIGHT_GRAY_COBBLESTONE.get().getDefaultState(), Block.Properties.from(LIGHT_GRAY_COBBLESTONE.get())));
+    public static final RegistryObject<Item> LIGHT_GRAY_COBBLESTONE_STAIRS_ITEM = ITEMS.register("light_gray_cobblestone_stairs", () -> new BlockItemBase(LIGHT_GRAY_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> LIGHT_GRAY_COBBLESTONE_SLAB= BLOCKS.register("light_gray_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(LIGHT_GRAY_COBBLESTONE.get())));
+    public static final RegistryObject<Item> LIGHT_GRAY_COBBLESTONE_SLAB_ITEM = ITEMS.register("light_gray_cobblestone_slab", () -> new BlockItemBase(LIGHT_GRAY_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> LIME_COBBLESTONE_STAIRS= BLOCKS.register("lime_cobblestone_stairs", () -> new StairsBlock(() -> LIME_COBBLESTONE.get().getDefaultState(), Block.Properties.from(LIME_COBBLESTONE.get())));
+    public static final RegistryObject<Item> LIME_COBBLESTONE_STAIRS_ITEM = ITEMS.register("lime_cobblestone_stairs", () -> new BlockItemBase(LIME_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> LIME_COBBLESTONE_SLAB= BLOCKS.register("lime_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(LIME_COBBLESTONE.get())));
+    public static final RegistryObject<Item> LIME_COBBLESTONE_SLAB_ITEM = ITEMS.register("lime_cobblestone_slab", () -> new BlockItemBase(LIME_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> MAGENTA_COBBLESTONE_STAIRS= BLOCKS.register("magenta_cobblestone_stairs", () -> new StairsBlock(() -> MAGENTA_COBBLESTONE.get().getDefaultState(), Block.Properties.from(MAGENTA_COBBLESTONE.get())));
+    public static final RegistryObject<Item> MAGENTA_COBBLESTONE_STAIRS_ITEM = ITEMS.register("magenta_cobblestone_stairs", () -> new BlockItemBase(MAGENTA_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> MAGENTA_COBBLESTONE_SLAB= BLOCKS.register("magenta_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(MAGENTA_COBBLESTONE.get())));
+    public static final RegistryObject<Item> MAGENTA_COBBLESTONE_SLAB_ITEM = ITEMS.register("magenta_cobblestone_slab", () -> new BlockItemBase(MAGENTA_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> ORANGE_COBBLESTONE_STAIRS= BLOCKS.register("orange_cobblestone_stairs", () -> new StairsBlock(() -> ORANGE_COBBLESTONE.get().getDefaultState(), Block.Properties.from(ORANGE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> ORANGE_COBBLESTONE_STAIRS_ITEM = ITEMS.register("orange_cobblestone_stairs", () -> new BlockItemBase(ORANGE_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> ORANGE_COBBLESTONE_SLAB= BLOCKS.register("orange_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(ORANGE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> ORANGE_COBBLESTONE_SLAB_ITEM = ITEMS.register("orange_cobblestone_slab", () -> new BlockItemBase(ORANGE_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> PINK_COBBLESTONE_STAIRS= BLOCKS.register("pink_cobblestone_stairs", () -> new StairsBlock(() -> PINK_COBBLESTONE.get().getDefaultState(), Block.Properties.from(PINK_COBBLESTONE.get())));
+    public static final RegistryObject<Item> PINK_COBBLESTONE_STAIRS_ITEM = ITEMS.register("pink_cobblestone_stairs", () -> new BlockItemBase(PINK_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> PINK_COBBLESTONE_SLAB= BLOCKS.register("pink_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(PINK_COBBLESTONE.get())));
+    public static final RegistryObject<Item> PINK_COBBLESTONE_SLAB_ITEM = ITEMS.register("pink_cobblestone_slab", () -> new BlockItemBase(PINK_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> PURPLE_COBBLESTONE_STAIRS= BLOCKS.register("purple_cobblestone_stairs", () -> new StairsBlock(() -> PURPLE_COBBLESTONE.get().getDefaultState(), Block.Properties.from(PURPLE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> PURPLE_COBBLESTONE_STAIRS_ITEM = ITEMS.register("purple_cobblestone_stairs", () -> new BlockItemBase(PURPLE_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> PURPLE_COBBLESTONE_SLAB= BLOCKS.register("purple_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(PURPLE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> PURPLE_COBBLESTONE_SLAB_ITEM = ITEMS.register("purple_cobblestone_slab", () -> new BlockItemBase(PURPLE_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> RED_COBBLESTONE_STAIRS= BLOCKS.register("red_cobblestone_stairs", () -> new StairsBlock(() -> RED_COBBLESTONE.get().getDefaultState(), Block.Properties.from(RED_COBBLESTONE.get())));
+    public static final RegistryObject<Item> RED_COBBLESTONE_STAIRS_ITEM = ITEMS.register("red_cobblestone_stairs", () -> new BlockItemBase(RED_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> RED_COBBLESTONE_SLAB= BLOCKS.register("red_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(RED_COBBLESTONE.get())));
+    public static final RegistryObject<Item> RED_COBBLESTONE_SLAB_ITEM = ITEMS.register("red_cobblestone_slab", () -> new BlockItemBase(RED_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> WHITE_COBBLESTONE_STAIRS= BLOCKS.register("white_cobblestone_stairs", () -> new StairsBlock(() -> WHITE_COBBLESTONE.get().getDefaultState(), Block.Properties.from(WHITE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> WHITE_COBBLESTONE_STAIRS_ITEM = ITEMS.register("white_cobblestone_stairs", () -> new BlockItemBase(WHITE_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> WHITE_COBBLESTONE_SLAB= BLOCKS.register("white_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(WHITE_COBBLESTONE.get())));
+    public static final RegistryObject<Item> WHITE_COBBLESTONE_SLAB_ITEM = ITEMS.register("white_cobblestone_slab", () -> new BlockItemBase(WHITE_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> YELLOW_COBBLESTONE_STAIRS= BLOCKS.register("yellow_cobblestone_stairs", () -> new StairsBlock(() -> YELLOW_COBBLESTONE.get().getDefaultState(), Block.Properties.from(YELLOW_COBBLESTONE.get())));
+    public static final RegistryObject<Item> YELLOW_COBBLESTONE_STAIRS_ITEM = ITEMS.register("yellow_cobblestone_stairs", () -> new BlockItemBase(YELLOW_COBBLESTONE_STAIRS.get()));
+    public static final RegistryObject<Block> YELLOW_COBBLESTONE_SLAB= BLOCKS.register("yellow_cobblestone_slab", () -> new SlabBlock(Block.Properties.from(YELLOW_COBBLESTONE.get())));
+    public static final RegistryObject<Item> YELLOW_COBBLESTONE_SLAB_ITEM = ITEMS.register("yellow_cobblestone_slab", () -> new BlockItemBase(YELLOW_COBBLESTONE_SLAB.get()));
+    public static final RegistryObject<Block> BLACK_STONE_STAIRS= BLOCKS.register("black_stone_stairs", () -> new StairsBlock(() -> BLACK_STONE.get().getDefaultState(), Block.Properties.from(BLACK_STONE.get())));
+    public static final RegistryObject<Item> BLACK_STONE_STAIRS_ITEM = ITEMS.register("black_stone_stairs", () -> new BlockItemBase(BLACK_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> BLACK_STONE_SLAB= BLOCKS.register("black_stone_slab", () -> new SlabBlock(Block.Properties.from(BLACK_STONE.get())));
+    public static final RegistryObject<Item> BLACK_STONE_SLAB_ITEM = ITEMS.register("black_stone_slab", () -> new BlockItemBase(BLACK_STONE_SLAB.get()));
+    public static final RegistryObject<Block> BLUE_STONE_STAIRS= BLOCKS.register("blue_stone_stairs", () -> new StairsBlock(() -> BLUE_STONE.get().getDefaultState(), Block.Properties.from(BLUE_STONE.get())));
+    public static final RegistryObject<Item> BLUE_STONE_STAIRS_ITEM = ITEMS.register("blue_stone_stairs", () -> new BlockItemBase(BLUE_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> BLUE_STONE_SLAB= BLOCKS.register("blue_stone_slab", () -> new SlabBlock(Block.Properties.from(BLUE_STONE.get())));
+    public static final RegistryObject<Item> BLUE_STONE_SLAB_ITEM = ITEMS.register("blue_stone_slab", () -> new BlockItemBase(BLUE_STONE_SLAB.get()));
+    public static final RegistryObject<Block> BROWN_STONE_STAIRS= BLOCKS.register("brown_stone_stairs", () -> new StairsBlock(() -> BROWN_STONE.get().getDefaultState(), Block.Properties.from(BROWN_STONE.get())));
+    public static final RegistryObject<Item> BROWN_STONE_STAIRS_ITEM = ITEMS.register("brown_stone_stairs", () -> new BlockItemBase(BROWN_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> BROWN_STONE_SLAB= BLOCKS.register("brown_stone_slab", () -> new SlabBlock(Block.Properties.from(BROWN_STONE.get())));
+    public static final RegistryObject<Item> BROWN_STONE_SLAB_ITEM = ITEMS.register("brown_stone_slab", () -> new BlockItemBase(BROWN_STONE_SLAB.get()));
+    public static final RegistryObject<Block> CYAN_STONE_STAIRS= BLOCKS.register("cyan_stone_stairs", () -> new StairsBlock(() -> CYAN_STONE.get().getDefaultState(), Block.Properties.from(CYAN_STONE.get())));
+    public static final RegistryObject<Item> CYAN_STONE_STAIRS_ITEM = ITEMS.register("cyan_stone_stairs", () -> new BlockItemBase(CYAN_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> CYAN_STONE_SLAB= BLOCKS.register("cyan_stone_slab", () -> new SlabBlock(Block.Properties.from(CYAN_STONE.get())));
+    public static final RegistryObject<Item> CYAN_STONE_SLAB_ITEM = ITEMS.register("cyan_stone_slab", () -> new BlockItemBase(CYAN_STONE_SLAB.get()));
+    public static final RegistryObject<Block> GRAY_STONE_STAIRS= BLOCKS.register("gray_stone_stairs", () -> new StairsBlock(() -> GRAY_STONE.get().getDefaultState(), Block.Properties.from(GRAY_STONE.get())));
+    public static final RegistryObject<Item> GRAY_STONE_STAIRS_ITEM = ITEMS.register("gray_stone_stairs", () -> new BlockItemBase(GRAY_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> GRAY_STONE_SLAB= BLOCKS.register("gray_stone_slab", () -> new SlabBlock(Block.Properties.from(GRAY_STONE.get())));
+    public static final RegistryObject<Item> GRAY_STONE_SLAB_ITEM = ITEMS.register("gray_stone_slab", () -> new BlockItemBase(GRAY_STONE_SLAB.get()));
+    public static final RegistryObject<Block> GREEN_STONE_STAIRS= BLOCKS.register("green_stone_stairs", () -> new StairsBlock(() -> GREEN_STONE.get().getDefaultState(), Block.Properties.from(GREEN_STONE.get())));
+    public static final RegistryObject<Item> GREEN_STONE_STAIRS_ITEM = ITEMS.register("green_stone_stairs", () -> new BlockItemBase(GREEN_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> GREEN_STONE_SLAB= BLOCKS.register("green_stone_slab", () -> new SlabBlock(Block.Properties.from(GREEN_STONE.get())));
+    public static final RegistryObject<Item> GREEN_STONE_SLAB_ITEM = ITEMS.register("green_stone_slab", () -> new BlockItemBase(GREEN_STONE_SLAB.get()));
+    public static final RegistryObject<Block> LIGHT_BLUE_STONE_STAIRS= BLOCKS.register("light_blue_stone_stairs", () -> new StairsBlock(() -> LIGHT_BLUE_STONE.get().getDefaultState(), Block.Properties.from(LIGHT_BLUE_STONE.get())));
+    public static final RegistryObject<Item> LIGHT_BLUE_STONE_STAIRS_ITEM = ITEMS.register("light_blue_stone_stairs", () -> new BlockItemBase(LIGHT_BLUE_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> LIGHT_BLUE_STONE_SLAB= BLOCKS.register("light_blue_stone_slab", () -> new SlabBlock(Block.Properties.from(LIGHT_BLUE_STONE.get())));
+    public static final RegistryObject<Item> LIGHT_BLUE_STONE_SLAB_ITEM = ITEMS.register("light_blue_stone_slab", () -> new BlockItemBase(LIGHT_BLUE_STONE_SLAB.get()));
+    public static final RegistryObject<Block> LIGHT_GRAY_STONE_STAIRS= BLOCKS.register("light_gray_stone_stairs", () -> new StairsBlock(() -> LIGHT_GRAY_STONE.get().getDefaultState(), Block.Properties.from(LIGHT_GRAY_STONE.get())));
+    public static final RegistryObject<Item> LIGHT_GRAY_STONE_STAIRS_ITEM = ITEMS.register("light_gray_stone_stairs", () -> new BlockItemBase(LIGHT_GRAY_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> LIGHT_GRAY_STONE_SLAB= BLOCKS.register("light_gray_stone_slab", () -> new SlabBlock(Block.Properties.from(LIGHT_GRAY_STONE.get())));
+    public static final RegistryObject<Item> LIGHT_GRAY_STONE_SLAB_ITEM = ITEMS.register("light_gray_stone_slab", () -> new BlockItemBase(LIGHT_GRAY_STONE_SLAB.get()));
+    public static final RegistryObject<Block> LIME_STONE_STAIRS= BLOCKS.register("lime_stone_stairs", () -> new StairsBlock(() -> LIME_STONE.get().getDefaultState(), Block.Properties.from(LIME_STONE.get())));
+    public static final RegistryObject<Item> LIME_STONE_STAIRS_ITEM = ITEMS.register("lime_stone_stairs", () -> new BlockItemBase(LIME_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> LIME_STONE_SLAB= BLOCKS.register("lime_stone_slab", () -> new SlabBlock(Block.Properties.from(LIME_STONE.get())));
+    public static final RegistryObject<Item> LIME_STONE_SLAB_ITEM = ITEMS.register("lime_stone_slab", () -> new BlockItemBase(LIME_STONE_SLAB.get()));
+    public static final RegistryObject<Block> MAGENTA_STONE_STAIRS= BLOCKS.register("magenta_stone_stairs", () -> new StairsBlock(() -> MAGENTA_STONE.get().getDefaultState(), Block.Properties.from(MAGENTA_STONE.get())));
+    public static final RegistryObject<Item> MAGENTA_STONE_STAIRS_ITEM = ITEMS.register("magenta_stone_stairs", () -> new BlockItemBase(MAGENTA_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> MAGENTA_STONE_SLAB= BLOCKS.register("magenta_stone_slab", () -> new SlabBlock(Block.Properties.from(MAGENTA_STONE.get())));
+    public static final RegistryObject<Item> MAGENTA_STONE_SLAB_ITEM = ITEMS.register("magenta_stone_slab", () -> new BlockItemBase(MAGENTA_STONE_SLAB.get()));
+    public static final RegistryObject<Block> ORANGE_STONE_STAIRS= BLOCKS.register("orange_stone_stairs", () -> new StairsBlock(() -> ORANGE_STONE.get().getDefaultState(), Block.Properties.from(ORANGE_STONE.get())));
+    public static final RegistryObject<Item> ORANGE_STONE_STAIRS_ITEM = ITEMS.register("orange_stone_stairs", () -> new BlockItemBase(ORANGE_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> ORANGE_STONE_SLAB= BLOCKS.register("orange_stone_slab", () -> new SlabBlock(Block.Properties.from(ORANGE_STONE.get())));
+    public static final RegistryObject<Item> ORANGE_STONE_SLAB_ITEM = ITEMS.register("orange_stone_slab", () -> new BlockItemBase(ORANGE_STONE_SLAB.get()));
+    public static final RegistryObject<Block> PINK_STONE_STAIRS= BLOCKS.register("pink_stone_stairs", () -> new StairsBlock(() -> PINK_STONE.get().getDefaultState(), Block.Properties.from(PINK_STONE.get())));
+    public static final RegistryObject<Item> PINK_STONE_STAIRS_ITEM = ITEMS.register("pink_stone_stairs", () -> new BlockItemBase(PINK_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> PINK_STONE_SLAB= BLOCKS.register("pink_stone_slab", () -> new SlabBlock(Block.Properties.from(PINK_STONE.get())));
+    public static final RegistryObject<Item> PINK_STONE_SLAB_ITEM = ITEMS.register("pink_stone_slab", () -> new BlockItemBase(PINK_STONE_SLAB.get()));
+    public static final RegistryObject<Block> PURPLE_STONE_STAIRS= BLOCKS.register("purple_stone_stairs", () -> new StairsBlock(() -> PURPLE_STONE.get().getDefaultState(), Block.Properties.from(PURPLE_STONE.get())));
+    public static final RegistryObject<Item> PURPLE_STONE_STAIRS_ITEM = ITEMS.register("purple_stone_stairs", () -> new BlockItemBase(PURPLE_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> PURPLE_STONE_SLAB= BLOCKS.register("purple_stone_slab", () -> new SlabBlock(Block.Properties.from(PURPLE_STONE.get())));
+    public static final RegistryObject<Item> PURPLE_STONE_SLAB_ITEM = ITEMS.register("purple_stone_slab", () -> new BlockItemBase(PURPLE_STONE_SLAB.get()));
+    public static final RegistryObject<Block> RED_STONE_STAIRS= BLOCKS.register("red_stone_stairs", () -> new StairsBlock(() -> RED_STONE.get().getDefaultState(), Block.Properties.from(RED_STONE.get())));
+    public static final RegistryObject<Item> RED_STONE_STAIRS_ITEM = ITEMS.register("red_stone_stairs", () -> new BlockItemBase(RED_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> RED_STONE_SLAB= BLOCKS.register("red_stone_slab", () -> new SlabBlock(Block.Properties.from(RED_STONE.get())));
+    public static final RegistryObject<Item> RED_STONE_SLAB_ITEM = ITEMS.register("red_stone_slab", () -> new BlockItemBase(RED_STONE_SLAB.get()));
+    public static final RegistryObject<Block> WHITE_STONE_STAIRS= BLOCKS.register("white_stone_stairs", () -> new StairsBlock(() -> WHITE_STONE.get().getDefaultState(), Block.Properties.from(WHITE_STONE.get())));
+    public static final RegistryObject<Item> WHITE_STONE_STAIRS_ITEM = ITEMS.register("white_stone_stairs", () -> new BlockItemBase(WHITE_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> WHITE_STONE_SLAB= BLOCKS.register("white_stone_slab", () -> new SlabBlock(Block.Properties.from(WHITE_STONE.get())));
+    public static final RegistryObject<Item> WHITE_STONE_SLAB_ITEM = ITEMS.register("white_stone_slab", () -> new BlockItemBase(WHITE_STONE_SLAB.get()));
+    public static final RegistryObject<Block> YELLOW_STONE_STAIRS= BLOCKS.register("yellow_stone_stairs", () -> new StairsBlock(() -> YELLOW_STONE.get().getDefaultState(), Block.Properties.from(YELLOW_STONE.get())));
+    public static final RegistryObject<Item> YELLOW_STONE_STAIRS_ITEM = ITEMS.register("yellow_stone_stairs", () -> new BlockItemBase(YELLOW_STONE_STAIRS.get()));
+    public static final RegistryObject<Block> YELLOW_STONE_SLAB= BLOCKS.register("yellow_stone_slab", () -> new SlabBlock(Block.Properties.from(YELLOW_STONE.get())));
+    public static final RegistryObject<Item> YELLOW_STONE_SLAB_ITEM = ITEMS.register("yellow_stone_slab", () -> new BlockItemBase(YELLOW_STONE_SLAB.get()));
+
 
 }

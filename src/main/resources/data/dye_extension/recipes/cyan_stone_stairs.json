@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A  ",
+        "AA ",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "dye_extension:cyan_stone"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:cyan_stone_stairs",
+        "count": 6
+    }
+}

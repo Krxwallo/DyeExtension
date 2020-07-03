@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "dye_extension:blocks/black_cobblestone",
+        "top":    "dye_extension:blocks/black_cobblestone",
+        "side":   "dye_extension:blocks/black_cobblestone"
+    }
+}

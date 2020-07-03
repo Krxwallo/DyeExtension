@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "dye_extension:blocks/lime_stone",
+        "top":    "dye_extension:blocks/lime_stone",
+        "side":   "dye_extension:blocks/lime_stone"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "dye_extension:blocks/blue_stone",
+        "top":    "dye_extension:blocks/blue_stone",
+        "side":   "dye_extension:blocks/blue_stone"
+    }
+}

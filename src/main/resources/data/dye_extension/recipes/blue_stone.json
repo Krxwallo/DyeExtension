@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "stone"
+        },
+        "B":
+        {
+            "item": "blue_dye"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:blue_stone",
+        "count": 8
+    }
+}
