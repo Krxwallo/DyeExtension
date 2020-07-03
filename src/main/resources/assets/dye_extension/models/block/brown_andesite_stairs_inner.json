@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "dye_extension:blocks/brown_andesite",
+        "top":    "dye_extension:blocks/brown_andesite",
+        "side":   "dye_extension:blocks/brown_andesite"
+    }
+}

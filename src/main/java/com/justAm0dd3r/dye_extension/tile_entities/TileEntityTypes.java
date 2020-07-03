@@ -1,22 +1,16 @@
 package com.justAm0dd3r.dye_extension.tile_entities;
 
 import com.justAm0dd3r.dye_extension.DyeExtension;
-import com.justAm0dd3r.dye_extension.Reference;
-import com.justAm0dd3r.dye_extension.util.registry_types.Blocks;
+import com.justAm0dd3r.dye_extension.reference.Reference;
 import com.mojang.datafixers.DataFixUtils;
 import com.mojang.datafixers.types.Type;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.SharedConstants;
 import net.minecraft.util.datafix.DataFixesManager;
 import net.minecraft.util.datafix.TypeReferences;
-import net.minecraft.util.registry.Registry;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import java.util.Objects;
 
 public class TileEntityTypes {
 

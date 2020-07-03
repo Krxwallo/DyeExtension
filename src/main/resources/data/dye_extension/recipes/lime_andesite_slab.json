@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "   ",
+        "   ",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "dye_extension:lime_andesite"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:lime_andesite_slab",
+        "count": 4
+    }
+}

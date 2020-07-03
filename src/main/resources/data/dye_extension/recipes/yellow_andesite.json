@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "andesite"
+        },
+        "B":
+        {
+            "item": "yellow_dye"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:yellow_andesite",
+        "count": 8
+    }
+}

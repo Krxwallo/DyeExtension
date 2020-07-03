@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "   ",
+        "   ",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "dye_extension:orange_polished_andesite"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:orange_polished_andesite_slab",
+        "count": 4
+    }
+}

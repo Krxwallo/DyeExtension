@@ -12,11 +12,11 @@
     {
         "A":
         {
-            "item": "minecraft:stick"
+            "item": "stick"
         },
         "B":
         {
-            "item":"minecraft:pink_dye"
+            "item": "pink_dye"
         }
 
     },
@@ -24,6 +24,6 @@
     "result":
     {
         "item": "dye_extension:pink_stick",
-        "count": 3
+        "count": 2
     }
 }

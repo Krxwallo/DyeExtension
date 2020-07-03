@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "A  ",
+        "AA ",
+        "AAA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "dye_extension:light_gray_polished_andesite"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:light_gray_polished_andesite_stairs",
+        "count": 6
+    }
+}

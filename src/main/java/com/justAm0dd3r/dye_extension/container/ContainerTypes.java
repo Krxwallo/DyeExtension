@@ -1,6 +1,6 @@
 package com.justAm0dd3r.dye_extension.container;
 
-import com.justAm0dd3r.dye_extension.Reference;
+import com.justAm0dd3r.dye_extension.reference.Reference;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.fml.RegistryObject;

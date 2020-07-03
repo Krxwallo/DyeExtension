@@ -29,7 +29,7 @@ credits="" #optional
 authors="justAm0dd3r" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Adds dyed sticks and all kinds of tools with dyed handles to the game.
+Adds dyed sticks and all kinds of tools with dyed handles to the game. It also adds some dyed blocks (dyed cobblestone and dyed leaves)
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.dye_extension]] #optional
@@ -47,6 +47,6 @@ Adds dyed sticks and all kinds of tools with dyed handles to the game.
 [[dependencies.dye_extension]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.1, 1.15.2]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"

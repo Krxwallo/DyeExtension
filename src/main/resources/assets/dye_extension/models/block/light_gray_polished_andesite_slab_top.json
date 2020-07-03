@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "dye_extension:blocks/light_gray_polished_andesite",
+        "top":    "dye_extension:blocks/light_gray_polished_andesite",
+        "side":   "dye_extension:blocks/light_gray_polished_andesite"
+    }
+}

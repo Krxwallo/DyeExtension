@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "AA",
+        "AA"
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "dye_extension:magenta_andesite"
+        }
+
+    },
+
+    "result":
+    {
+        "item": "dye_extension:magenta_polished_andesite",
+        "count": 4
+    }
+}

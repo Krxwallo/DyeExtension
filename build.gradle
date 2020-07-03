@@ -14,10 +14,12 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.2.0'
+version = '1.4.0'
 group = 'com.justAm0dd3r.dye_extension' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+//noinspection GroovyUnusedAssignment
 archivesBaseName = 'dye_extension-1.15.2'
 
+//noinspection GroovyUnusedAssignment
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
 minecraft {
@@ -75,7 +77,8 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+            //noinspection GroovyAssignabilityCheck
+            args '--mod', 'dye_extension', '--all', '--output', file('src/generated/resources/')
 
             mods {
                 examplemod {
