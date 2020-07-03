@@ -488,5 +488,38 @@ public class Blocks {
     public static final RegistryObject<Block> YELLOW_STONE_SLAB= BLOCKS.register("yellow_stone_slab", () -> new SlabBlock(Block.Properties.from(YELLOW_STONE.get())));
     public static final RegistryObject<Item> YELLOW_STONE_SLAB_ITEM = ITEMS.register("yellow_stone_slab", () -> new BlockItemBase(YELLOW_STONE_SLAB.get()));
 
+    // Auto-GEN dyed stone buttons
+    public static final RegistryObject<Block> BLACK_STONE_BUTTON= BLOCKS.register("black_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> BLACK_STONE_BUTTON_ITEM = ITEMS.register("black_stone_button", () -> new BlockItemBase(BLACK_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> BLUE_STONE_BUTTON= BLOCKS.register("blue_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> BLUE_STONE_BUTTON_ITEM = ITEMS.register("blue_stone_button", () -> new BlockItemBase(BLUE_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> BROWN_STONE_BUTTON= BLOCKS.register("brown_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> BROWN_STONE_BUTTON_ITEM = ITEMS.register("brown_stone_button", () -> new BlockItemBase(BROWN_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> CYAN_STONE_BUTTON= BLOCKS.register("cyan_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> CYAN_STONE_BUTTON_ITEM = ITEMS.register("cyan_stone_button", () -> new BlockItemBase(CYAN_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> GRAY_STONE_BUTTON= BLOCKS.register("gray_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> GRAY_STONE_BUTTON_ITEM = ITEMS.register("gray_stone_button", () -> new BlockItemBase(GRAY_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> GREEN_STONE_BUTTON= BLOCKS.register("green_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> GREEN_STONE_BUTTON_ITEM = ITEMS.register("green_stone_button", () -> new BlockItemBase(GREEN_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> LIGHT_BLUE_STONE_BUTTON= BLOCKS.register("light_blue_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> LIGHT_BLUE_STONE_BUTTON_ITEM = ITEMS.register("light_blue_stone_button", () -> new BlockItemBase(LIGHT_BLUE_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> LIGHT_GRAY_STONE_BUTTON= BLOCKS.register("light_gray_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> LIGHT_GRAY_STONE_BUTTON_ITEM = ITEMS.register("light_gray_stone_button", () -> new BlockItemBase(LIGHT_GRAY_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> LIME_STONE_BUTTON= BLOCKS.register("lime_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> LIME_STONE_BUTTON_ITEM = ITEMS.register("lime_stone_button", () -> new BlockItemBase(LIME_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> MAGENTA_STONE_BUTTON= BLOCKS.register("magenta_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> MAGENTA_STONE_BUTTON_ITEM = ITEMS.register("magenta_stone_button", () -> new BlockItemBase(MAGENTA_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> ORANGE_STONE_BUTTON= BLOCKS.register("orange_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> ORANGE_STONE_BUTTON_ITEM = ITEMS.register("orange_stone_button", () -> new BlockItemBase(ORANGE_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> PINK_STONE_BUTTON= BLOCKS.register("pink_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> PINK_STONE_BUTTON_ITEM = ITEMS.register("pink_stone_button", () -> new BlockItemBase(PINK_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> PURPLE_STONE_BUTTON= BLOCKS.register("purple_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> PURPLE_STONE_BUTTON_ITEM = ITEMS.register("purple_stone_button", () -> new BlockItemBase(PURPLE_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> RED_STONE_BUTTON= BLOCKS.register("red_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> RED_STONE_BUTTON_ITEM = ITEMS.register("red_stone_button", () -> new BlockItemBase(RED_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> WHITE_STONE_BUTTON= BLOCKS.register("white_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> WHITE_STONE_BUTTON_ITEM = ITEMS.register("white_stone_button", () -> new BlockItemBase(WHITE_STONE_BUTTON.get()));
+    public static final RegistryObject<Block> YELLOW_STONE_BUTTON= BLOCKS.register("yellow_stone_button", () -> new DyedStoneButtonBlock(Block.Properties.from(net.minecraft.block.Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Item> YELLOW_STONE_BUTTON_ITEM = ITEMS.register("yellow_stone_button", () -> new BlockItemBase(YELLOW_STONE_BUTTON.get()));
 
 }

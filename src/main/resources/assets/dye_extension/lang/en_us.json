@@ -3,6 +3,9 @@
   "itemGroup.dyedToolsTab": "Dyed Tools",
   "itemGroup.dyedBlocksTab": "Dyed Blocks",
   "itemGroup.dyedSticksTab": "Dyed Sticks",
+  "itemGroup.dyedStairsTab": "Dyed Stairs",
+  "itemGroup.dyedSlabsTab": "Dyed Slabs",
+  "itemGroup.dyedButtonsTab": "Dyed Buttons",
 
   "*Dyed Sticks*": "===============================================",
   "item.dye_extension.red_stick": "Red Stick",
@@ -658,5 +661,23 @@
   "block.dye_extension.white_stone_slab": "White Polished Andesite Slab",
   "block.dye_extension.yellow_stone": "Yellow Stone",
   "block.dye_extension.yellow_stone_stairs": "Yellow Polished Andesite Stairs",
-  "block.dye_extension.yellow_stone_slab": "Yellow Polished Andesite Slab"
+  "block.dye_extension.yellow_stone_slab": "Yellow Polished Andesite Slab",
+
+  "Dyed Stone Buttons": "",
+  "block.dye_extension.black_stone_button": "Black Stone Button",
+  "block.dye_extension.blue_stone_button": "Blue Stone Button",
+  "block.dye_extension.brown_stone_button": "Brown Stone Button",
+  "block.dye_extension.cyan_stone_button": "Cyan Stone Button",
+  "block.dye_extension.gray_stone_button": "Gray Stone Button",
+  "block.dye_extension.green_stone_button": "Green Stone Button",
+  "block.dye_extension.light_blue_stone_button": "Light Blue Stone Button",
+  "block.dye_extension.light_gray_stone_button": "Light Gray Stone Button",
+  "block.dye_extension.lime_stone_button": "Lime Stone Button",
+  "block.dye_extension.magenta_stone_button": "Magenta Stone Button",
+  "block.dye_extension.orange_stone_button": "Orange Stone Button",
+  "block.dye_extension.pink_stone_button": "Pink Stone Button",
+  "block.dye_extension.purple_stone_button": "Purple Stone Button",
+  "block.dye_extension.red_stone_button": "Red Stone Button",
+  "block.dye_extension.white_stone_button": "White Stone Button",
+  "block.dye_extension.yellow_stone_button": "Yellow Stone Button"
 }
