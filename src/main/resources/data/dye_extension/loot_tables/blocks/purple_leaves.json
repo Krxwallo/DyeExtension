@@ -35,7 +35,7 @@
               ]
             }
           ],
-          "name": "minecraft:oak_leaves"
+          "name": "dye_extension:purple_leaves"
         },
         {
           "type": "minecraft:item",
