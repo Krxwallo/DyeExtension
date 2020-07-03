@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "dye_extension:black_cobblestone"
+  },
+  "result": "dye_extension:black_stone",
+  "experience": 0.1,
+  "cookingtime": 200
+}

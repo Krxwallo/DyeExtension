@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "dye_extension:orange_cobblestone"
+  },
+  "result": "dye_extension:orange_stone",
+  "experience": 0.1,
+  "cookingtime": 200
+}
