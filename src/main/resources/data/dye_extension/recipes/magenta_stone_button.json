@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dye_extension:magenta_stone"
+    }
+  ],
+  "result": {
+    "item": "dye_extension:magenta_stone_button",
+    "count": 1
+  }
+}
