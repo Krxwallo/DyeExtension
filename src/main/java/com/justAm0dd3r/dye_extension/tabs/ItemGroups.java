@@ -1,5 +1,6 @@
 package com.justAm0dd3r.dye_extension.tabs;
 
+import com.justAm0dd3r.dye_extension.DyeExtension;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 
@@ -13,11 +14,20 @@ public class ItemGroups {
     public static final DyedButtonsTab DYED_BUTTONS_TAB = new DyedButtonsTab();
 
     public static ItemGroup getFromBlock(Block block) {
-        String unformattedText = block.getNameTextComponent().getUnformattedComponentText();
-        if (unformattedText.contains("stairs")) return DYED_STAIRS_TAB;
-        else if(unformattedText.contains("slab")) return DYED_SLABS_TAB;
-        else if(unformattedText.contains("button")) return DYED_BUTTONS_TAB;
-        else {
+        DyeExtension.LOGGER.debug("ItemGroups.getFromBlock");
+        String text = block.getTranslationKey();
+        DyeExtension.LOGGER.debug("unformatted Text: " + text);
+        if (text.contains("stairs")) {
+            DyeExtension.LOGGER.debug("Stairs Tab");
+            return DYED_STAIRS_TAB;
+        } else if(text.contains("slab")) {
+            DyeExtension.LOGGER.debug("Slab Tab");
+            return DYED_SLABS_TAB;
+        } else if(text.contains("button")) {
+            DyeExtension.LOGGER.debug("Buttons Tab");
+            return DYED_BUTTONS_TAB;
+        } else {
+            DyeExtension.LOGGER.debug("Blocks Tab");
             return DYED_BLOCKS_TAB;
         }
     }

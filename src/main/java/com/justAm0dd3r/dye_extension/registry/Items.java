@@ -17,7 +17,7 @@ Author: justAm0dd3r
 public class Items {
 
     public static final DeferredRegister<Item> ITEMS =
-            new DeferredRegister<>(ForgeRegistries.ITEMS, Reference.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MOD_ID);
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());

@@ -18,7 +18,7 @@ public class TileEntityTypes {
         TILE_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
-    public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES = new DeferredRegister<>
+    public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES = DeferredRegister.create
             (ForgeRegistries.TILE_ENTITIES, Reference.MOD_ID);
 
 
