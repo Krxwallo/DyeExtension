@@ -24,7 +24,6 @@ public class DyeExtension {
     public static final Logger LOGGER = LogManager.getLogger();
 
     public DyeExtension() {
-
         LOGGER.info(Reference.NAME + " Version " + Reference.VERSION + " by " + Reference.AUTHOR + " started up.");
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
