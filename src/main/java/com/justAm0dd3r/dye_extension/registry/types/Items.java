@@ -1,8 +1,7 @@
-package com.justAm0dd3r.dye_extension.registry;
+package com.justAm0dd3r.dye_extension.registry.types;
 
-import com.justAm0dd3r.dye_extension.DyeExtension;
-import com.justAm0dd3r.dye_extension.reference.Reference;
 import com.justAm0dd3r.dye_extension.items.*;
+import com.justAm0dd3r.dye_extension.reference.Reference;
 import com.justAm0dd3r.dye_extension.tabs.ItemGroups;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemTier;
@@ -14,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 /*
 Author: justAm0dd3r
  */
+@SuppressWarnings("unused")
 public class Items {
 
     public static final DeferredRegister<Item> ITEMS =
@@ -472,5 +472,89 @@ public class Items {
     public static final RegistryObject<Item> IRON_SWORD_YELLOW_HANDLE = ITEMS.register("iron_sword_yellow_handle", () -> new DyedSword(ItemTier.IRON, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
     public static final RegistryObject<Item> GOLDEN_SWORD_YELLOW_HANDLE = ITEMS.register("golden_sword_yellow_handle", () -> new DyedSword(ItemTier.GOLD, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
     public static final RegistryObject<Item> DIAMOND_SWORD_YELLOW_HANDLE = ITEMS.register("diamond_sword_yellow_handle", () -> new DyedSword(ItemTier.DIAMOND, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+
+
+    // Netherite Tools with dyed handles UPDATE:
+
+    public static final RegistryObject<Item> NETHERITE_AXE_BLACK_HANDLE = ITEMS.register("netherite_axe_black_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_BLACK_HANDLE = ITEMS.register("netherite_hoe_black_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_BLACK_HANDLE = ITEMS.register("netherite_pickaxe_black_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_BLACK_HANDLE = ITEMS.register("netherite_shovel_black_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_BLACK_HANDLE = ITEMS.register("netherite_sword_black_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_BLUE_HANDLE = ITEMS.register("netherite_axe_blue_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_BLUE_HANDLE = ITEMS.register("netherite_hoe_blue_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_BLUE_HANDLE = ITEMS.register("netherite_pickaxe_blue_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_BLUE_HANDLE = ITEMS.register("netherite_shovel_blue_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_BLUE_HANDLE = ITEMS.register("netherite_sword_blue_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_BROWN_HANDLE = ITEMS.register("netherite_axe_brown_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_BROWN_HANDLE = ITEMS.register("netherite_hoe_brown_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_BROWN_HANDLE = ITEMS.register("netherite_pickaxe_brown_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_BROWN_HANDLE = ITEMS.register("netherite_shovel_brown_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_BROWN_HANDLE = ITEMS.register("netherite_sword_brown_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_CYAN_HANDLE = ITEMS.register("netherite_axe_cyan_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_CYAN_HANDLE = ITEMS.register("netherite_hoe_cyan_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_CYAN_HANDLE = ITEMS.register("netherite_pickaxe_cyan_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_CYAN_HANDLE = ITEMS.register("netherite_shovel_cyan_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_CYAN_HANDLE = ITEMS.register("netherite_sword_cyan_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_GRAY_HANDLE = ITEMS.register("netherite_axe_gray_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_GRAY_HANDLE = ITEMS.register("netherite_hoe_gray_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_GRAY_HANDLE = ITEMS.register("netherite_pickaxe_gray_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_GRAY_HANDLE = ITEMS.register("netherite_shovel_gray_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_GRAY_HANDLE = ITEMS.register("netherite_sword_gray_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_GREEN_HANDLE = ITEMS.register("netherite_axe_green_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_GREEN_HANDLE = ITEMS.register("netherite_hoe_green_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_GREEN_HANDLE = ITEMS.register("netherite_pickaxe_green_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_GREEN_HANDLE = ITEMS.register("netherite_shovel_green_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_GREEN_HANDLE = ITEMS.register("netherite_sword_green_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_LIGHT_BLUE_HANDLE = ITEMS.register("netherite_axe_light_blue_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_LIGHT_BLUE_HANDLE = ITEMS.register("netherite_hoe_light_blue_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_LIGHT_BLUE_HANDLE = ITEMS.register("netherite_pickaxe_light_blue_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_LIGHT_BLUE_HANDLE = ITEMS.register("netherite_shovel_light_blue_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_LIGHT_BLUE_HANDLE = ITEMS.register("netherite_sword_light_blue_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_LIGHT_GRAY_HANDLE = ITEMS.register("netherite_axe_light_gray_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_LIGHT_GRAY_HANDLE = ITEMS.register("netherite_hoe_light_gray_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_LIGHT_GRAY_HANDLE = ITEMS.register("netherite_pickaxe_light_gray_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_LIGHT_GRAY_HANDLE = ITEMS.register("netherite_shovel_light_gray_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_LIGHT_GRAY_HANDLE = ITEMS.register("netherite_sword_light_gray_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_LIME_HANDLE = ITEMS.register("netherite_axe_lime_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_LIME_HANDLE = ITEMS.register("netherite_hoe_lime_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_LIME_HANDLE = ITEMS.register("netherite_pickaxe_lime_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_LIME_HANDLE = ITEMS.register("netherite_shovel_lime_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_LIME_HANDLE = ITEMS.register("netherite_sword_lime_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_MAGENTA_HANDLE = ITEMS.register("netherite_axe_magenta_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_MAGENTA_HANDLE = ITEMS.register("netherite_hoe_magenta_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_MAGENTA_HANDLE = ITEMS.register("netherite_pickaxe_magenta_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_MAGENTA_HANDLE = ITEMS.register("netherite_shovel_magenta_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_MAGENTA_HANDLE = ITEMS.register("netherite_sword_magenta_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_ORANGE_HANDLE = ITEMS.register("netherite_axe_orange_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_ORANGE_HANDLE = ITEMS.register("netherite_hoe_orange_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_ORANGE_HANDLE = ITEMS.register("netherite_pickaxe_orange_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_ORANGE_HANDLE = ITEMS.register("netherite_shovel_orange_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_ORANGE_HANDLE = ITEMS.register("netherite_sword_orange_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_PINK_HANDLE = ITEMS.register("netherite_axe_pink_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_PINK_HANDLE = ITEMS.register("netherite_hoe_pink_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_PINK_HANDLE = ITEMS.register("netherite_pickaxe_pink_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_PINK_HANDLE = ITEMS.register("netherite_shovel_pink_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_PINK_HANDLE = ITEMS.register("netherite_sword_pink_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_PURPLE_HANDLE = ITEMS.register("netherite_axe_purple_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_PURPLE_HANDLE = ITEMS.register("netherite_hoe_purple_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_PURPLE_HANDLE = ITEMS.register("netherite_pickaxe_purple_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_PURPLE_HANDLE = ITEMS.register("netherite_shovel_purple_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_PURPLE_HANDLE = ITEMS.register("netherite_sword_purple_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_RED_HANDLE = ITEMS.register("netherite_axe_red_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_RED_HANDLE = ITEMS.register("netherite_hoe_red_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_RED_HANDLE = ITEMS.register("netherite_pickaxe_red_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_RED_HANDLE = ITEMS.register("netherite_shovel_red_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_RED_HANDLE = ITEMS.register("netherite_sword_red_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_WHITE_HANDLE = ITEMS.register("netherite_axe_white_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_WHITE_HANDLE = ITEMS.register("netherite_hoe_white_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_WHITE_HANDLE = ITEMS.register("netherite_pickaxe_white_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_WHITE_HANDLE = ITEMS.register("netherite_shovel_white_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_WHITE_HANDLE = ITEMS.register("netherite_sword_white_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_AXE_YELLOW_HANDLE = ITEMS.register("netherite_axe_yellow_handle", () -> new DyedAxe(ItemTier.NETHERITE, 5.0F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_HOE_YELLOW_HANDLE = ITEMS.register("netherite_hoe_yellow_handle", () -> new DyedHoe(ItemTier.NETHERITE, 0.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_PICKAXE_YELLOW_HANDLE = ITEMS.register("netherite_pickaxe_yellow_handle", () -> new DyedPickaxe(ItemTier.NETHERITE, 1, -2.8F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SHOVEL_YELLOW_HANDLE = ITEMS.register("netherite_shovel_yellow_handle", () -> new DyedShovel(ItemTier.NETHERITE, 1.5F, -3.0F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
+    public static final RegistryObject<Item> NETHERITE_SWORD_YELLOW_HANDLE = ITEMS.register("netherite_sword_yellow_handle", () -> new DyedSword(ItemTier.NETHERITE, 3, -2.4F, (new Item.Properties()).group(ItemGroups.DYED_TOOLS_TAB)));
 
 }

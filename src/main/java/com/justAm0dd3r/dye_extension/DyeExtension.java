@@ -26,8 +26,6 @@ public class DyeExtension {
     public DyeExtension() {
         LOGGER.info(Reference.NAME + " Version " + Reference.VERSION + " by " + Reference.AUTHOR + " started up.");
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 
         Registries.init();
@@ -37,21 +35,10 @@ public class DyeExtension {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event) {}
-    private void doClientStuff(final FMLClientSetupEvent event) {}
-
     @SubscribeEvent
     public void clientSetup(FMLClientSetupEvent event) {
         ScreenManager.registerFactory(ContainerTypes.DYED_FURNACE.get(), DyedFurnaceScreen::
                 new);
     }
-
-    /*@SubscribeEvent
-    public void registerTE(RegistryEvent.Register<TileEntityType<?>> evt) {
-        LOGGER.info("@SubscribeEvent registerTE called().");
-        evt.getRegistry().register(TileEntityTypes.DYED_FURNACE.get());
-        TileEntityTypes.DYED_FURNACE.get().setRegistryName("dye_extension", "dyed_furnace");
-        LOGGER.info("Registered Tile Entity.");
-    }*/
 
 }

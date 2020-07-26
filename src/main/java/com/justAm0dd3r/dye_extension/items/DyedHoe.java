@@ -13,7 +13,8 @@ public class DyedHoe extends HoeItem {
     private static int getAttackDamage(IItemTier tier) {
         if (tier.equals(ItemTier.STONE)) return -1;
         else if (tier.equals(ItemTier.IRON)) return -2;
-        else if (tier.equals(ItemTier.DIAMOND) || tier.equals(ItemTier.NETHERITE)) return -3;
+        else if (tier.equals(ItemTier.DIAMOND)) return -3;
+        else if (tier.equals(ItemTier.NETHERITE)) return -4;
 
         return 0;
     }

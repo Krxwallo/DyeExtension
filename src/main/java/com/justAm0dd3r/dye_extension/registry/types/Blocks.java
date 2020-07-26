@@ -1,4 +1,4 @@
-package com.justAm0dd3r.dye_extension.registry;
+package com.justAm0dd3r.dye_extension.registry.types;
 
 import com.justAm0dd3r.dye_extension.blocks.*;
 import com.justAm0dd3r.dye_extension.reference.Reference;
@@ -11,8 +11,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import static com.justAm0dd3r.dye_extension.registry.Items.ITEMS;
+import static com.justAm0dd3r.dye_extension.registry.types.Items.ITEMS;
 
+@SuppressWarnings("unused")
 public class Blocks {
 
     public static void init() {

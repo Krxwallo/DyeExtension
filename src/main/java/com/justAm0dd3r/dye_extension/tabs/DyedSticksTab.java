@@ -1,6 +1,6 @@
 package com.justAm0dd3r.dye_extension.tabs;
 
-import com.justAm0dd3r.dye_extension.registry.Items;
+import com.justAm0dd3r.dye_extension.registry.types.Items;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 

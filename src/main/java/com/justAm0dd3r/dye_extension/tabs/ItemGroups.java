@@ -16,7 +16,7 @@ public class ItemGroups {
     public static ItemGroup getFromBlock(Block block) {
         DyeExtension.LOGGER.debug("ItemGroups.getFromBlock");
         String text = block.getTranslationKey();
-        DyeExtension.LOGGER.debug("unformatted Text: " + text);
+        DyeExtension.LOGGER.debug("translation key: " + text);
         if (text.contains("stairs")) {
             DyeExtension.LOGGER.debug("Stairs Tab");
             return DYED_STAIRS_TAB;
