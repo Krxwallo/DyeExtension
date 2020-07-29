@@ -1,4 +1,4 @@
 Build 2020-07-26 15:10 dye_extension-1.16.1-2.1.0
 =================================================
     - Bugfix
-    - Added netherite tools with dyed handles
+    - Added netherite tools wiIteth dyed handles
