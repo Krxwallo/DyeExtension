@@ -1,6 +1,7 @@
 package com.justAm0dd3r.dye_extension;
 
 import com.justAm0dd3r.dye_extension.container.ContainerTypes;
+import com.justAm0dd3r.dye_extension.filters.FiltersRebornManager;
 import com.justAm0dd3r.dye_extension.reference.Reference;
 import com.justAm0dd3r.dye_extension.registry.Registries;
 import com.justAm0dd3r.dye_extension.screen.DyedFurnaceScreen;
@@ -39,6 +40,7 @@ public class DyeExtension {
     public void clientSetup(FMLClientSetupEvent event) {
         ScreenManager.registerFactory(ContainerTypes.DYED_FURNACE.get(), DyedFurnaceScreen::
                 new);
-    }
 
+        FiltersRebornManager.registerFiltersWhenLoaded();
+    }
 }

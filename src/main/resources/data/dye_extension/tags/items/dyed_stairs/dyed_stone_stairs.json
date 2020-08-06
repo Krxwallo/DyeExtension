@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "dye_extension:black_stone_stairs",
+    "dye_extension:blue_stone_stairs",
+    "dye_extension:brown_stone_stairs",
+    "dye_extension:cyan_stone_stairs",
+    "dye_extension:gray_stone_stairs",
+    "dye_extension:green_stone_stairs",
+    "dye_extension:light_blue_stone_stairs",
+    "dye_extension:light_gray_stone_stairs",
+    "dye_extension:lime_stone_stairs",
+    "dye_extension:magenta_stone_stairs",
+    "dye_extension:orange_stone_stairs",
+    "dye_extension:pink_stone_stairs",
+    "dye_extension:purple_stone_stairs",
+    "dye_extension:red_stone_stairs",
+    "dye_extension:white_stone_stairs",
+    "dye_extension:yellow_stone_stairs"
+  ]
+}

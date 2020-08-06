@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "dye_extension:black_andesite_stairs",
+    "dye_extension:blue_andesite_stairs",
+    "dye_extension:brown_andesite_stairs",
+    "dye_extension:cyan_andesite_stairs",
+    "dye_extension:gray_andesite_stairs",
+    "dye_extension:green_andesite_stairs",
+    "dye_extension:light_blue_andesite_stairs",
+    "dye_extension:light_gray_andesite_stairs",
+    "dye_extension:lime_andesite_stairs",
+    "dye_extension:magenta_andesite_stairs",
+    "dye_extension:orange_andesite_stairs",
+    "dye_extension:pink_andesite_stairs",
+    "dye_extension:purple_andesite_stairs",
+    "dye_extension:red_andesite_stairs",
+    "dye_extension:white_andesite_stairs",
+    "dye_extension:yellow_andesite_stairs"
+  ]
+}

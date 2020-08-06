@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "dye_extension:black_stone",
+    "dye_extension:blue_stone",
+    "dye_extension:brown_stone",
+    "dye_extension:cyan_stone",
+    "dye_extension:gray_stone",
+    "dye_extension:green_stone",
+    "dye_extension:light_blue_stone",
+    "dye_extension:light_gray_stone",
+    "dye_extension:lime_stone",
+    "dye_extension:magenta_stone",
+    "dye_extension:orange_stone",
+    "dye_extension:pink_stone",
+    "dye_extension:purple_stone",
+    "dye_extension:red_stone",
+    "dye_extension:white_stone",
+    "dye_extension:yellow_stone"
+  ]
+}

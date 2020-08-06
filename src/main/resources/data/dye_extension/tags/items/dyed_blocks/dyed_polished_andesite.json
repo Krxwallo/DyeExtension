@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "dye_extension:black_polished_andesite",
+    "dye_extension:blue_polished_andesite",
+    "dye_extension:brown_polished_andesite",
+    "dye_extension:cyan_polished_andesite",
+    "dye_extension:gray_polished_andesite",
+    "dye_extension:green_polished_andesite",
+    "dye_extension:light_blue_polished_andesite",
+    "dye_extension:light_gray_polished_andesite",
+    "dye_extension:lime_polished_andesite",
+    "dye_extension:magenta_polished_andesite",
+    "dye_extension:orange_polished_andesite",
+    "dye_extension:pink_polished_andesite",
+    "dye_extension:purple_polished_andesite",
+    "dye_extension:red_polished_andesite",
+    "dye_extension:white_polished_andesite",
+    "dye_extension:yellow_polished_andesite"
+  ]
+}

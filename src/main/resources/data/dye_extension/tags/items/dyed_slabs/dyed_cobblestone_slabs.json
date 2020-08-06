@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "dye_extension:black_cobblestone_slab",
+    "dye_extension:blue_cobblestone_slab",
+    "dye_extension:brown_cobblestone_slab",
+    "dye_extension:cyan_cobblestone_slab",
+    "dye_extension:gray_cobblestone_slab",
+    "dye_extension:green_cobblestone_slab",
+    "dye_extension:light_blue_cobblestone_slab",
+    "dye_extension:light_gray_cobblestone_slab",
+    "dye_extension:lime_cobblestone_slab",
+    "dye_extension:magenta_cobblestone_slab",
+    "dye_extension:orange_cobblestone_slab",
+    "dye_extension:pink_cobblestone_slab",
+    "dye_extension:purple_cobblestone_slab",
+    "dye_extension:red_cobblestone_slab",
+    "dye_extension:white_cobblestone_slab",
+    "dye_extension:yellow_cobblestone_slab"
+  ]
+}

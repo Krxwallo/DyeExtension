@@ -761,5 +761,27 @@
   "item.dye_extension.netherite_hoe_yellow_handle": "Netherite Hoe (Yellow Handle)",
   "item.dye_extension.netherite_pickaxe_yellow_handle": "Netherite Pickaxe (Yellow Handle)",
   "item.dye_extension.netherite_shovel_yellow_handle": "Netherite Shovel (Yellow Handle)",
-  "item.dye_extension.netherite_sword_yellow_handle": "Netherite Sword (Yellow Handle)"
+  "item.dye_extension.netherite_sword_yellow_handle": "Netherite Sword (Yellow Handle)",
+
+  "gui.tag_filter.dye_extension.dyed_tools.dyed_swords":                    "Dyed Swords",
+  "gui.tag_filter.dye_extension.dyed_tools.dyed_axes":                      "Dyed Axes",
+  "gui.tag_filter.dye_extension.dyed_tools.dyed_pickaxes":                  "Dyed Pickaxes",
+  "gui.tag_filter.dye_extension.dyed_tools.dyed_shovels":                   "Dyed Shovels",
+  "gui.tag_filter.dye_extension.dyed_tools.dyed_hoes":                      "Dyed Hoes",
+
+  "gui.tag_filter.dye_extension.dyed_blocks.dyed_andesite":                 "Dyed Andesite",
+  "gui.tag_filter.dye_extension.dyed_blocks.dyed_polished_andesite":        "Dyed Polished Andesite",
+  "gui.tag_filter.dye_extension.dyed_blocks.dyed_leaves":                   "Dyed Leaves",
+  "gui.tag_filter.dye_extension.dyed_blocks.dyed_cobblestone":              "Dyed Cobblestone",
+  "gui.tag_filter.dye_extension.dyed_blocks.dyed_stone":                    "Dyed Stone",
+
+  "gui.tag_filter.dye_extension.dyed_stairs.dyed_andesite_stairs":          "Dyed Andesite Stairs",
+  "gui.tag_filter.dye_extension.dyed_stairs.dyed_polished_andesite_stairs": "Dyed Polished Andesite Stairs",
+  "gui.tag_filter.dye_extension.dyed_stairs.dyed_cobblestone_stairs":       "Dyed Cobblestone Stairs",
+  "gui.tag_filter.dye_extension.dyed_stairs.dyed_stone_stairs":             "Dyed Stone Stairs",
+
+  "gui.tag_filter.dye_extension.dyed_slabs.dyed_andesite_slabs":            "Dyed Andesite Slabs",
+  "gui.tag_filter.dye_extension.dyed_slabs.dyed_polished_andesite_slabs":   "Dyed Polished Andesite Slabs",
+  "gui.tag_filter.dye_extension.dyed_slabs.dyed_cobblestone_slabs":         "Dyed Cobblestone Slabs",
+  "gui.tag_filter.dye_extension.dyed_slabs.dyed_stone_slabs":               "Dyed Stone Slabs"
 }

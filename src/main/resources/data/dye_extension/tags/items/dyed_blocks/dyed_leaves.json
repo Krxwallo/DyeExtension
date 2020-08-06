@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "dye_extension:black_leaves",
+    "dye_extension:blue_leaves",
+    "dye_extension:brown_leaves",
+    "dye_extension:cyan_leaves",
+    "dye_extension:gray_leaves",
+    "dye_extension:green_leaves",
+    "dye_extension:light_blue_leaves",
+    "dye_extension:light_gray_leaves",
+    "dye_extension:lime_leaves",
+    "dye_extension:magenta_leaves",
+    "dye_extension:orange_leaves",
+    "dye_extension:pink_leaves",
+    "dye_extension:purple_leaves",
+    "dye_extension:red_leaves",
+    "dye_extension:white_leaves",
+    "dye_extension:yellow_leaves"
+  ]
+}
