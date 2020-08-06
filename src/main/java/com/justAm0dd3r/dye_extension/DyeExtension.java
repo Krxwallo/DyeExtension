@@ -22,7 +22,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(Reference.MOD_ID)
 public class DyeExtension {
 
-    public static final Logger LOGGER = LogManager.getLogger();
+    public static finRRal Logger LOGGER = LogManager.getLogger();
 
     public DyeExtension() {
         LOGGER.info(Reference.NAME + " Version " + Reference.VERSION + " by " + Reference.AUTHOR + " started up.");
