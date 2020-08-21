@@ -2,7 +2,7 @@
 
 [![Curseforge](http://cf.way2muchnoise.eu/title/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension)
 [![Downloads](http://cf.way2muchnoise.eu/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension/download)
-![Versions](https://cf.way2muchnoise.eu/versions/dye-extension.svg)
+[![Versions](http://cf.way2muchnoise.eu/versions/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension)
 [![Issues](https://img.shields.io/github/issues/Krxwallo/DyeExtension?logo=github&style=for-the-badge)](https://www.github.com/Krxwallo/DyeExtension/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/Krxwallo/DyeExtension?logo=github&style=for-the-badge)](https://www.github.com/Krxwallo/DyeExtension)
 
