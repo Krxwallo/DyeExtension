@@ -1,6 +1,6 @@
 ![DyeExtension Banner](https://lookonthebrightsi.de/mc-mods/dye-extension/images/dye-extension-banner-round-edges.png)
 
-[![Download](https://cf.way2muchnoise.eu/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension) [![Issues](https://img.shields.io/github/issues/Krxwallo/DyeExtension?logo=github&style=for-the-badge)](https://www.github.com/Krxwallo/DyeExtension/issues)
+[![Curseforge](https://cf.way2muchnoise.eu/title/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension) [![Downloads](https://cf.way2muchnoise.eu/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension/download) [![Issues](https://img.shields.io/github/issues/Krxwallo/DyeExtension?logo=github&style=for-the-badge)](https://www.github.com/Krxwallo/DyeExtension/issues)
 
 # Dye Extension
 
