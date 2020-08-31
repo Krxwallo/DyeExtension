@@ -11,10 +11,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 /*
-Author: justAm0dd3r
+ * Author: justAm0dd3r
  */
 @SuppressWarnings("unused")
-public class Items {
+public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MOD_ID);

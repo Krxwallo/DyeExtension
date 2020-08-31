@@ -44,7 +44,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                dye_extension {
                     source sourceSets.main
                 }
             }
@@ -60,7 +60,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                dye_extension {
                     source sourceSets.main
                 }
             }
@@ -75,10 +75,10 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/')
+            args '--mod', 'dye_extension', '--all', '--output', file('src/generated/resources/')
 
             mods {
-                examplemod {
+                dye_extension {
                     source sourceSets.main
                 }
             }
@@ -87,19 +87,30 @@ minecraft {
 }
 
 repositories {
-     maven {
-         name = "justAm0dd3r Maven"
-         url = "https://lookonthebrightsi.de/mc-mods/files/maven/"
-     }
+    maven {
+     name = "justAm0dd3r Maven"
+     url = "https://lookonthebrightsi.de/mc-mods/files/maven/"
+    }
+    maven {
+        // location of the maven that hosts JEI files
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.k-4u.nl"
+    }
 }
 
 dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.16.1-32.0.47'
-    compile fg.deobf("justAm0dd3r.filters-reborn:filters_reborn-1.16.1:1.0.0")
+    minecraft "net.minecraftforge:forge:${mc_version}-32.0.47"
+    compile fg.deobf("justAm0dd3r.filters-reborn:filters_reborn-1.16.1:1.0.2")
     compile fg.deobf("justAm0dd3r.cheat-mode:cheat_mode-1.16.1:1.1.0")
+    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

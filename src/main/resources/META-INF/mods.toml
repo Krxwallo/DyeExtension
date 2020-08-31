@@ -8,6 +8,7 @@ issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/dye-extension/issu
     displayURL="https://www.curseforge.com/minecraft/mc-mods/dye-extension" #optional
     # A file name (in the root of the mod JAR) containing a logo for display
     # logoFile="examplemod.png" #optional
+    updateJSONURL="https://raw.githubusercontent.com/Krxwallo/ModUpdates/master/dye-extension/update.json"
     authors="justAm0dd3r"
     description='''
     Adds dyed sticks and all kinds of tools with dyed handles to the game. It also adds some dyed blocks (dyed cobblestone and dyed leaves)

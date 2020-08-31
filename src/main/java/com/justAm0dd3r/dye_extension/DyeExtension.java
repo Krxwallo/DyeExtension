@@ -8,10 +8,10 @@ import com.justAm0dd3r.dye_extension.screen.DyedFurnaceScreen;
 import com.justAm0dd3r.dye_extension.tile_entities.TileEntityTypes;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,11 +27,13 @@ public class DyeExtension {
     public DyeExtension() {
         LOGGER.info(Reference.NAME + " Version " + Reference.VERSION + " by " + Reference.AUTHOR + " started up.");
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-
         Registries.init();
         TileEntityTypes.init();
         ContainerTypes.init();
+
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        modEventBus.addListener(this::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
