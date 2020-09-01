@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:magenta_andesite"
+    ]
+  },
+  "criteria": {
+    "magenta_andesite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:magenta_andesite"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:magenta_andesite"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "magenta_andesite",
+      "has_the_recipe"
+    ]
+  ]
+}

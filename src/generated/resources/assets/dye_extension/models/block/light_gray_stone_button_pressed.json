@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "dye_extension:blocks/light_gray_stone"
+  }
+}

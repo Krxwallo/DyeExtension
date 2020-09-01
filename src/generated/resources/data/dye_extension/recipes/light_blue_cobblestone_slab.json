@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "dye_extension:light_blue_cobblestone"
+    }
+  },
+  "result": {
+    "item": "dye_extension:light_blue_cobblestone_slab",
+    "count": 6
+  }
+}

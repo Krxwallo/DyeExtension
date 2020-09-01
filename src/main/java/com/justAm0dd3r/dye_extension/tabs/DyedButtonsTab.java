@@ -13,7 +13,7 @@ import javax.annotation.Nullable;
 public class DyedButtonsTab extends ItemGroup {
 
     public DyedButtonsTab() {
-        super("dyedButtonsTab");
+        super("dyed_buttons_tab");
     }
 
     @Nonnull

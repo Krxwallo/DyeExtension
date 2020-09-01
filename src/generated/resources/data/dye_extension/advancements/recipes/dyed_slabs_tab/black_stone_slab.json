@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:black_stone_slab"
+    ]
+  },
+  "criteria": {
+    "black_stone_slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:black_stone_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:black_stone_slab"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "black_stone_slab",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:red_leaves"
+    ]
+  },
+  "criteria": {
+    "red_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:red_leaves"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:red_leaves"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_leaves",
+      "has_the_recipe"
+    ]
+  ]
+}

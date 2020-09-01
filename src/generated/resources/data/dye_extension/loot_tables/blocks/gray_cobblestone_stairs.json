@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "gray_cobblestone_stairs",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:gray_cobblestone_stairs"
+        }
+      ]
+    }
+  ]
+}

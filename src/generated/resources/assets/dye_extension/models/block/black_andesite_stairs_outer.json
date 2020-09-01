@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "side": "dye_extension:blocks/black_andesite",
+    "bottom": "dye_extension:blocks/black_andesite",
+    "top": "dye_extension:blocks/black_andesite"
+  }
+}

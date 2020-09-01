@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "dye_extension:gray_stone"
+    }
+  },
+  "result": {
+    "item": "dye_extension:gray_stone_slab",
+    "count": 6
+  }
+}

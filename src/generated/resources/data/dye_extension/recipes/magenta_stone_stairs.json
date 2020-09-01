@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "dye_extension:magenta_stone"
+    }
+  },
+  "result": {
+    "item": "dye_extension:magenta_stone_stairs",
+    "count": 6
+  }
+}

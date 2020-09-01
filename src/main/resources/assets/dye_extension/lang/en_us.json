@@ -1,11 +1,11 @@
 {
   "*Tabs*": "===============================================",
-  "itemGroup.dyedToolsTab": "Dyed Tools",
-  "itemGroup.dyedBlocksTab": "Dyed Blocks",
-  "itemGroup.dyedSticksTab": "Dyed Sticks",
-  "itemGroup.dyedStairsTab": "Dyed Stairs",
-  "itemGroup.dyedSlabsTab": "Dyed Slabs",
-  "itemGroup.dyedButtonsTab": "Dyed Buttons",
+  "itemGroup.dyed_tools_tab": "Dyed Tools",
+  "itemGroup.dyed_blocks_tab": "Dyed Blocks",
+  "itemGroup.dyed_sticks_tab": "Dyed Sticks",
+  "itemGroup.dyed_stairs_tab": "Dyed Stairs",
+  "itemGroup.dyed_slabs_tab": "Dyed Slabs",
+  "itemGroup.dyed_buttons_tab": "Dyed Buttons",
 
   "*Dyed Sticks*": "===============================================",
   "item.dye_extension.red_stick": "Red Stick",

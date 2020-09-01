@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:pink_cobblestone"
+    ]
+  },
+  "criteria": {
+    "pink_cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:pink_cobblestone"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:pink_cobblestone"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pink_cobblestone",
+      "has_the_recipe"
+    ]
+  ]
+}

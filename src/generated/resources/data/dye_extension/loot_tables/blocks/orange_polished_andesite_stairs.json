@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "orange_polished_andesite_stairs",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:orange_polished_andesite_stairs"
+        }
+      ]
+    }
+  ]
+}

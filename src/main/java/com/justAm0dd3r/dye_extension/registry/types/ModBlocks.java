@@ -7,7 +7,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-@SuppressWarnings("unused")
 public class ModBlocks {
 
     public static void init() {
@@ -16,7 +15,7 @@ public class ModBlocks {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Reference.MOD_ID);
 
-    public static DyedBlockHolder DYED_ANDESITE_BLOCKS = new DyedBlockHolder("andesite");
+    public static final DyedBlockHolder DYED_ANDESITE_BLOCKS = new DyedBlockHolder("andesite");
     public static final DyedBlockHolder DYED_POLISHED_ANDESITE_BLOCKS = new DyedBlockHolder("polished_andesite");
     public static final DyedBlockHolder DYED_LEAVES_BLOCKS = new DyedBlockHolder("leaves", false, false, false);
     public static final DyedBlockHolder DYED_STONE_BLOCKS = new DyedBlockHolder("stone", true, true, true);

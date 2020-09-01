@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dye_extension:blocks/pink_polished_andesite"
+  }
+}

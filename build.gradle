@@ -75,7 +75,8 @@ minecraft {
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
 
-            args '--mod', 'dye_extension', '--all', '--output', file('src/generated/resources/')
+            //noinspection GroovyAssignabilityCheck
+            args '--mod', 'dye_extension', '--all', '--output', "\"" + file("src/generated/resources").toString() + "\"", "--validate", "--existing", "\"" + sourceSets.main.resources.srcDirs[0] + "\""
 
             mods {
                 dye_extension {

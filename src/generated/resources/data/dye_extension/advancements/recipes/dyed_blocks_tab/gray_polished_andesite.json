@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:gray_polished_andesite"
+    ]
+  },
+  "criteria": {
+    "gray_polished_andesite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:gray_polished_andesite"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:gray_polished_andesite"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "gray_polished_andesite",
+      "has_the_recipe"
+    ]
+  ]
+}

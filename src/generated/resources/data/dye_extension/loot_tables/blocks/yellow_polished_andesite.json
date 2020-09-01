@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "yellow_polished_andesite",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:yellow_polished_andesite"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dye_extension",
+  "ingredients": [
+    {
+      "item": "dye_extension:green_stone"
+    }
+  ],
+  "result": {
+    "item": "dye_extension:green_stone_button"
+  }
+}

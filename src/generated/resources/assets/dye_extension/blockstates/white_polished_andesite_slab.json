@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "dye_extension:block/white_polished_andesite_slab_top"
+    },
+    "type=bottom": {
+      "model": "dye_extension:block/white_polished_andesite_slab"
+    },
+    "type=double": {
+      "model": "dye_extension:block/white_polished_andesite"
+    }
+  }
+}

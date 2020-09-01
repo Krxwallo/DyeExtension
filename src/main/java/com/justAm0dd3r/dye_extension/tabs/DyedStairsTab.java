@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 public class DyedStairsTab extends ItemGroup {
 
     public DyedStairsTab() {
-        super("dyedStairsTab");
+        super("dyed_stairs_tab");
     }
 
     @SuppressWarnings("NullableProblems")

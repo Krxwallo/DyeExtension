@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "black_cobblestone_slab",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:black_cobblestone_slab"
+        }
+      ]
+    }
+  ]
+}

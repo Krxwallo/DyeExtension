@@ -1,5 +1,7 @@
 package com.justAm0dd3r.dye_extension.blocks;
 
+import com.justAm0dd3r.dye_extension.data_gen.DataGenerationProperties;
+import com.justAm0dd3r.dye_extension.data_gen.DataGenerationProperty;
 import com.justAm0dd3r.dye_extension.interfaces.IDyedBlockHolder;
 import com.justAm0dd3r.dye_extension.items.ItemHolder;
 import com.justAm0dd3r.dye_extension.registry.types.ModBlocks;
@@ -110,6 +112,9 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         // Block Item
         RegistryObject<Item> item = ModItems.ITEMS.register(dyedName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
 
+        // Register the property for data generation
+        DataGenerationProperties.addProperty(new DataGenerationProperty(dyedName, DataGenerationProperty.Type.BLOCK));
+
         // Return the block registry
         return new BlockRegistry(block, item);
     }
@@ -130,6 +135,9 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         // Block Item
         RegistryObject<Item> item = ModItems.ITEMS.register(stairsName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
 
+        // Register the property for data generation
+        DataGenerationProperties.addProperty(new DataGenerationProperty(stairsName, DataGenerationProperty.Type.STAIRS));
+
         // Return the block registry
         return new BlockRegistry(block, item);
     }
@@ -148,6 +156,9 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         // Block Item
         RegistryObject<Item> item = ModItems.ITEMS.register(slabName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
 
+        // Register the property for data generation
+        DataGenerationProperties.addProperty(new DataGenerationProperty(slabName, DataGenerationProperty.Type.SLAB));
+
         // Return the block registry
         return new BlockRegistry(block, item);
     }
@@ -165,6 +176,9 @@ public class DyedBlockHolder implements IDyedBlockHolder {
 
         // Block Item
         RegistryObject<Item> item = ModItems.ITEMS.register(buttonName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
+
+        // Register the property for data generation
+        DataGenerationProperties.addProperty(new DataGenerationProperty(buttonName, DataGenerationProperty.Type.BUTTON));
 
         // Return the block registry
         return new BlockRegistry(block, item);

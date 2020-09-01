@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 public class DyedToolsTab extends ItemGroup {
 
     public DyedToolsTab() {
-        super("dyedToolsTab");
+        super("dyed_tools_tab");
     }
 
     @SuppressWarnings("NullableProblems")

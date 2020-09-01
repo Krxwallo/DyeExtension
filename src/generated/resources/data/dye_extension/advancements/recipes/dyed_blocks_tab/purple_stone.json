@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:purple_stone"
+    ]
+  },
+  "criteria": {
+    "purple_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:purple_stone"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:purple_stone"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "purple_stone",
+      "has_the_recipe"
+    ]
+  ]
+}

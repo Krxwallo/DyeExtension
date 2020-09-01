@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "dye_extension:pink_polished_andesite"
+    }
+  },
+  "result": {
+    "item": "dye_extension:pink_polished_andesite_slab",
+    "count": 6
+  }
+}

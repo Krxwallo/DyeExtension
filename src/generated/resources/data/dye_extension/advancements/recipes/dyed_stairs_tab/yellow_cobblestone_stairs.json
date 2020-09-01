@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:yellow_cobblestone_stairs"
+    ]
+  },
+  "criteria": {
+    "yellow_cobblestone_stairs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:yellow_cobblestone_stairs"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:yellow_cobblestone_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "yellow_cobblestone_stairs",
+      "has_the_recipe"
+    ]
+  ]
+}
