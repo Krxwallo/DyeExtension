@@ -1,14 +1,15 @@
 {
-"type": "minecraft:block",
-"pools": [
-{
-  "rolls": 1,
-  "entries": [
+  "type": "minecraft:block",
+  "pools": [
     {
-      "type": "minecraft:item",
-      "name": "dye_extension:brown_andesite_stairs"
+      "name": "brown_andesite_stairs",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:brown_andesite_stairs"
+        }
+      ]
     }
   ]
-}
-]
 }

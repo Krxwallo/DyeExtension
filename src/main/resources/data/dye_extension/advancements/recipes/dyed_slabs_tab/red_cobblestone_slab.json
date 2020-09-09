@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:red_cobblestone_slab"
+    ]
+  },
+  "criteria": {
+    "red_cobblestone_slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:red_cobblestone_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:red_cobblestone_slab"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_cobblestone_slab",
+      "has_the_recipe"
+    ]
+  ]
+}

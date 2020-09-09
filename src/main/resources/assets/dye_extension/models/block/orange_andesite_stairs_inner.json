@@ -1,8 +1,8 @@
 {
-    "parent": "block/inner_stairs",
-    "textures": {
-        "bottom": "dye_extension:blocks/orange_andesite",
-        "top":    "dye_extension:blocks/orange_andesite",
-        "side":   "dye_extension:blocks/orange_andesite"
-    }
+  "parent": "block/inner_stairs",
+  "textures": {
+    "side": "dye_extension:blocks/orange_andesite",
+    "bottom": "dye_extension:blocks/orange_andesite",
+    "top": "dye_extension:blocks/orange_andesite"
+  }
 }

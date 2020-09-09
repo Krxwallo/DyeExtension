@@ -1,7 +1,13 @@
 {
-    "variants": {
-        "type=bottom": { "model": "dye_extension:block/cyan_stone_slab" },
-        "type=top":    { "model":    "dye_extension:block/cyan_stone_slab_top" },
-        "type=double": { "model": "dye_extension:block/cyan_stone" }
+  "variants": {
+    "type=top": {
+      "model": "dye_extension:block/cyan_stone_slab_top"
+    },
+    "type=bottom": {
+      "model": "dye_extension:block/cyan_stone_slab"
+    },
+    "type=double": {
+      "model": "dye_extension:block/cyan_stone"
     }
+  }
 }

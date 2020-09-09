@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:blue_dirt"
+    ]
+  },
+  "criteria": {
+    "blue_dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:blue_dirt"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:blue_dirt"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blue_dirt",
+      "has_the_recipe"
+    ]
+  ]
+}

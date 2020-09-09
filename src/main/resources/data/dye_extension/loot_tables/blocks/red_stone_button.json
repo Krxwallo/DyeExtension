@@ -1,14 +1,15 @@
 {
-"type": "minecraft:block",
-"pools": [
-{
-  "rolls": 1,
-  "entries": [
+  "type": "minecraft:block",
+  "pools": [
     {
-      "type": "minecraft:item",
-      "name": "dye_extension:red_stone_button"
+      "name": "red_stone_button",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:red_stone_button"
+        }
+      ]
     }
   ]
-}
-]
 }

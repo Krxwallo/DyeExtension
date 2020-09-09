@@ -2,40 +2,12 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "name": "yellow_stone",
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
-                        }
-                      }
-                    ]
-                  }
-                }
-              ],
-              "name": "dye_extension:yellow_stone"
-            },
-            {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:survives_explosion"
-                }
-              ],
-              "name": "dye_extension:yellow_cobblestone"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "dye_extension:yellow_stone"
         }
       ]
     }

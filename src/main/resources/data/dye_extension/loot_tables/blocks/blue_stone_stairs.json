@@ -1,14 +1,15 @@
 {
-"type": "minecraft:block",
-"pools": [
-{
-  "rolls": 1,
-  "entries": [
+  "type": "minecraft:block",
+  "pools": [
     {
-      "type": "minecraft:item",
-      "name": "dye_extension:blue_stone_stairs"
+      "name": "blue_stone_stairs",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:blue_stone_stairs"
+        }
+      ]
     }
   ]
-}
-]
 }

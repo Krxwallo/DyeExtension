@@ -1,14 +1,15 @@
 {
-"type": "minecraft:block",
-"pools": [
-{
-  "rolls": 1,
-  "entries": [
+  "type": "minecraft:block",
+  "pools": [
     {
-      "type": "minecraft:item",
-      "name": "dye_extension:yellow_cobblestone"
+      "name": "yellow_cobblestone",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "dye_extension:yellow_cobblestone"
+        }
+      ]
     }
   ]
-}
-]
 }

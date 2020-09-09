@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top":   "dye_extension:blocks/white_furnace_top",
-        "front": "dye_extension:blocks/white_furnace_front_on",
-        "side":  "dye_extension:blocks/white_furnace_side"
-    }
-}

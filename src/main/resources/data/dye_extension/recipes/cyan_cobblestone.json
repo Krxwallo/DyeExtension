@@ -1,29 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-        "AAA"
-    ],
-
-    "key":
-    {
-        "A":
-        {
-            "item": "cobblestone"
-        },
-        "B":
-        {
-            "item": "cyan_dye"
-        }
-
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cobblestone"
     },
-
-    "result":
-    {
-        "item": "dye_extension:cyan_cobblestone",
-        "count": 8
+    "b": {
+      "item": "minecraft:cyan_dye"
     }
+  },
+  "result": {
+    "item": "dye_extension:cyan_cobblestone",
+    "count": 8
+  }
 }

@@ -1,25 +1,16 @@
 {
-    "type": "minecraft:crafting_shaped",
-
-    "pattern":
-    [
-        "   ",
-        "   ",
-        "AAA"
-    ],
-
-    "key":
-    {
-        "A":
-        {
-            "item": "dye_extension:cyan_stone"
-        }
-
-    },
-
-    "result":
-    {
-        "item": "dye_extension:cyan_stone_slab",
-        "count": 6
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "dye_extension:cyan_stone"
     }
+  },
+  "result": {
+    "item": "dye_extension:cyan_stone_slab",
+    "count": 6
+  }
 }

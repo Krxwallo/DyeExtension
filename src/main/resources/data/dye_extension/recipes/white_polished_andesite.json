@@ -1,29 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-        "AAA"
-    ],
-
-    "key":
-    {
-        "A":
-        {
-            "item": "polished_andesite"
-        },
-        "B":
-        {
-            "item": "white_dye"
-        }
-
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:polished_andesite"
     },
-
-    "result":
-    {
-        "item": "dye_extension:white_polished_andesite",
-        "count": 8
+    "b": {
+      "item": "minecraft:white_dye"
     }
+  },
+  "result": {
+    "item": "dye_extension:white_polished_andesite",
+    "count": 8
+  }
 }

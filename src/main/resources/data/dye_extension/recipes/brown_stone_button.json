@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "dye_extension",
   "ingredients": [
     {
       "item": "dye_extension:brown_stone"
     }
   ],
   "result": {
-    "item": "dye_extension:brown_stone_button",
-    "count": 1
+    "item": "dye_extension:brown_stone_button"
   }
 }

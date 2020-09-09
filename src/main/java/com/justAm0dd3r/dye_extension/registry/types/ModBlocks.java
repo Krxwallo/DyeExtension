@@ -20,5 +20,6 @@ public class ModBlocks {
     public static final DyedBlockHolder DYED_LEAVES_BLOCKS = new DyedBlockHolder("leaves", false, false, false);
     public static final DyedBlockHolder DYED_STONE_BLOCKS = new DyedBlockHolder("stone", true, true, true);
     public static final DyedBlockHolder DYED_COBBLESTONE_BLOCKS = new DyedBlockHolder("cobblestone");
+    public static final DyedBlockHolder DYED_DIRT_BLOCKS = new DyedBlockHolder("dirt", false, false, false);
 
 }

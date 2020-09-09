@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "dye_extension",
   "ingredients": [
     {
       "item": "dye_extension:white_stone"
     }
   ],
   "result": {
-    "item": "dye_extension:white_stone_button",
-    "count": 1
+    "item": "dye_extension:white_stone_button"
   }
 }

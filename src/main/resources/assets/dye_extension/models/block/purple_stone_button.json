@@ -1,6 +1,6 @@
 {
-    "parent": "block/button",
-    "textures": {
-        "texture": "dye_extension:blocks/purple_stone"
-    }
+  "parent": "block/button",
+  "textures": {
+    "texture": "dye_extension:blocks/purple_stone"
+  }
 }

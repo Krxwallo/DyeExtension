@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:blue_polished_andesite"
+    ]
+  },
+  "criteria": {
+    "blue_polished_andesite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:blue_polished_andesite"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:blue_polished_andesite"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blue_polished_andesite",
+      "has_the_recipe"
+    ]
+  ]
+}

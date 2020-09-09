@@ -2,6 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "name": "black_andesite",
       "rolls": 1,
       "entries": [
         {

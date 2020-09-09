@@ -2,28 +2,11 @@
   "type": "minecraft:block",
   "pools": [
     {
+      "name": "lime_stone_slab",
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "dye_extension:lime_stone_slab",
-                  "properties": {
-                    "type": "double"
-                  }
-                }
-              ],
-              "count": 2
-            },
-            {
-              "function": "minecraft:explosion_decay"
-            }
-          ],
           "name": "dye_extension:lime_stone_slab"
         }
       ]

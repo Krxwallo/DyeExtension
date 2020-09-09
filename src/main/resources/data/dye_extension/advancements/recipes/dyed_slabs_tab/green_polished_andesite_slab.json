@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:green_polished_andesite_slab"
+    ]
+  },
+  "criteria": {
+    "green_polished_andesite_slab": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:green_polished_andesite_slab"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:green_polished_andesite_slab"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "green_polished_andesite_slab",
+      "has_the_recipe"
+    ]
+  ]
+}

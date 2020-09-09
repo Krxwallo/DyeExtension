@@ -1,8 +1,8 @@
 {
-    "parent": "block/slab_top",
-    "textures": {
-        "bottom": "dye_extension:blocks/lime_polished_andesite",
-        "top":    "dye_extension:blocks/lime_polished_andesite",
-        "side":   "dye_extension:blocks/lime_polished_andesite"
-    }
+  "parent": "block/slab_top",
+  "textures": {
+    "side": "dye_extension:blocks/lime_polished_andesite",
+    "bottom": "dye_extension:blocks/lime_polished_andesite",
+    "top": "dye_extension:blocks/lime_polished_andesite"
+  }
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "dye_extension:black_stone_stairs"
+    ]
+  },
+  "criteria": {
+    "black_stone_stairs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dye_extension:black_stone_stairs"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "dye_extension:black_stone_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "black_stone_stairs",
+      "has_the_recipe"
+    ]
+  ]
+}

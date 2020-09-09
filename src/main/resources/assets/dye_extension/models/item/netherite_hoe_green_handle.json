@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-    "textures": {
-      "layer0": "dye_extension:items/netherite_hoe_green_handle"
-  }
-}

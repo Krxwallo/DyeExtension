@@ -1,29 +1,21 @@
 {
-    "type": "minecraft:crafting_shaped",
-
-    "pattern":
-    [
-        "AAA",
-        "ABA",
-        "AAA"
-    ],
-
-    "key":
-    {
-        "A":
-        {
-            "tag": "leaves"
-        },
-        "B":
-        {
-            "item": "green_dye"
-        }
-
+  "type": "minecraft:crafting_shaped",
+  "group": "dye_extension",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:oak_leaves"
     },
-
-    "result":
-    {
-        "item": "dye_extension:green_leaves",
-        "count": 8
+    "b": {
+      "item": "minecraft:green_dye"
     }
+  },
+  "result": {
+    "item": "dye_extension:green_leaves",
+    "count": 8
+  }
 }
