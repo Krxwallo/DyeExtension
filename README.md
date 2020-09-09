@@ -1,4 +1,4 @@
-![DyeExtension Banner](https://lookonthebrightsi.de/mc-mods/dye-extension/images/dye-extension-banner-round-edges.png)
+[![DyeExtension Banner](https://lookonthebrightsi.de/mc-mods/dye-extension/images/dye-extension-banner-round-edges.png)]()
 
 [![Curseforge](http://cf.way2muchnoise.eu/title/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension)
 [![Downloads](http://cf.way2muchnoise.eu/dye-extension.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/dye-extension/download)
