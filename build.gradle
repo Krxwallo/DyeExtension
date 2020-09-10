@@ -54,7 +54,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             //noinspection GroovyAssignabilityCheck
-            args '--mod', 'dye_extension', '--all', '--output', "\"" + file("src/main/resources").toString() + "\"", "--validate", "--existing", "\"" + file("src/main/resources") + "\""
+            args '--mod', 'dye_extension', '--all', '--output', "\"" + file("src/main/resources").toString() + "\"", "--validate", "--existing", "\"" + sourceSets.main.resources.srcDirs[0] + "\""
 
             mods {
                 dye_extension {
@@ -94,7 +94,7 @@ jar {
     }
 }
 
-jar.finalizedBy('reobfJar') 
+jar.finalizedBy('reobfJar')
 
 publishing {
     publications {
