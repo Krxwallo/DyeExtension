@@ -130,7 +130,7 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         final String unDyedStairsName = originalName + "_slab";
         // Block
         RegistryObject<Block> block = ModBlocks.BLOCKS.register(stairsName,
-                () -> new StairsBlock(() -> blockRegistry.getBlock().get().getDefaultState(), AbstractBlock.Properties.from(ReflectionUtil.requireBlockByName(unDyedStairsName)).func_235861_h_()));
+                () -> new StairsBlock(() -> blockRegistry.getBlock().get().getDefaultState(), AbstractBlock.Properties.from(ReflectionUtil.requireBlockByName(unDyedStairsName)).setRequiresTool()));
 
         // Block Item
         RegistryObject<Item> item = ModItems.ITEMS.register(stairsName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
@@ -151,7 +151,7 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         RegistryObject<Block> block = ModBlocks.BLOCKS.register(slabName,
                 () -> new SlabBlock(AbstractBlock.Properties.from(
                         /* Get the Blocks.XXX (e.g. Blocks.ANDESITE_SLAB) field and create the properties from it */
-                        ReflectionUtil.requireBlockByName(unDyedSlabName)).func_235861_h_()));
+                        ReflectionUtil.requireBlockByName(unDyedSlabName)).setRequiresTool()));
 
         // Block Item
         RegistryObject<Item> item = ModItems.ITEMS.register(slabName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
@@ -172,7 +172,7 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         RegistryObject<Block> block = ModBlocks.BLOCKS.register(buttonName,
                 () -> new StoneButtonBlock(AbstractBlock.Properties.from(
                         /* Get the Blocks.XXX (e.g. Blocks.STONE_BUTTON) field and create the properties from it */
-                        ReflectionUtil.requireBlockByName(unDyedButtonName)).func_235861_h_()));
+                        ReflectionUtil.requireBlockByName(unDyedButtonName)).setRequiresTool()));
 
         // Block Item
         RegistryObject<Item> item = ModItems.ITEMS.register(buttonName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));

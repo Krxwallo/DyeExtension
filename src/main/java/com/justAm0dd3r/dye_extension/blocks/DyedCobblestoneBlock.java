@@ -10,7 +10,7 @@ import net.minecraft.item.DyeColor;
 public class DyedCobblestoneBlock extends Block implements IDyedBlock {
 
     public DyedCobblestoneBlock(DyeColor color) {
-        super(Properties.create(Material.ROCK).func_235861_h_().hardnessAndResistance(2.0F, 6.0F)
+        super(Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(2.0F, 6.0F)
                 .sound(SoundType.STONE));
     }
 }

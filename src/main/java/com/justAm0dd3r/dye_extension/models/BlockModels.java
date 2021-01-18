@@ -7,8 +7,7 @@ import com.justAm0dd3r.dye_extension.util.StringUtils;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.client.model.generators.BlockModelProvider;
-import net.minecraftforge.client.model.generators.ExistingFileHelper;
-import org.graalvm.compiler.lir.sparc.SPARCLoadConstantTableBaseOp;
+import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class BlockModels extends BlockModelProvider {
     public BlockModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {

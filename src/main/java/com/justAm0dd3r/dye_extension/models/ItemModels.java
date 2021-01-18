@@ -4,8 +4,8 @@ import com.justAm0dd3r.dye_extension.data_gen.DataGenerationProperties;
 import com.justAm0dd3r.dye_extension.data_gen.DataGenerationProperty;
 import com.justAm0dd3r.dye_extension.reference.Reference;
 import net.minecraft.data.DataGenerator;
-import net.minecraftforge.client.model.generators.ExistingFileHelper;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class ItemModels extends ItemModelProvider {
     public ItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
