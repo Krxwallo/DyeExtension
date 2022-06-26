@@ -3,13 +3,12 @@ package com.justAm0dd3r.dye_extension.util;
 import com.justAm0dd3r.dye_extension.DyeExtension;
 import com.justAm0dd3r.dye_extension.blocks.BlockHolder;
 import com.justAm0dd3r.dye_extension.blocks.DyedBlockHolder;
-import com.justAm0dd3r.dye_extension.items.ItemHolder;
 import com.justAm0dd3r.dye_extension.registry.types.ModBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.DyeColor;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

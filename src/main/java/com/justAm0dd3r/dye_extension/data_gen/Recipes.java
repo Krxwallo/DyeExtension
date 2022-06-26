@@ -4,10 +4,14 @@ import com.justAm0dd3r.dye_extension.DyeExtension;
 import com.justAm0dd3r.dye_extension.reference.Reference;
 import com.justAm0dd3r.dye_extension.util.ReflectionUtil;
 import com.justAm0dd3r.dye_extension.util.StringUtils;
-import net.minecraft.advancements.criterion.InventoryChangeTrigger;
-import net.minecraft.block.Block;
-import net.minecraft.data.*;
-import net.minecraft.util.IItemProvider;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 
 import javax.annotation.Nonnull;
 import java.util.function.Consumer;
@@ -18,58 +22,60 @@ public class Recipes extends RecipeProvider {
     }
 
     @Override
-    protected void registerRecipes(@Nonnull Consumer<IFinishedRecipe> consumer) {
+    protected void buildCraftingRecipes(@Nonnull Consumer<FinishedRecipe> consumer) {
         DyeExtension.LOGGER.debug("registerRecipes() called.");
         for (DataGenerationProperty property : DataGenerationProperties.getProperties()) {
             DyeExtension.LOGGER.debug("Adding a recipe for name: " + property.getDyedName() + ".");
             final RecipePattern pattern;
             final int count;
             switch (property.getType()) {
-                case DataGenerationProperty.Type.BLOCK:
+                case DataGenerationProperty.Type.BLOCK -> {
                     pattern = RecipePatterns.DYED_BLOCK;
                     count = 8;
-                    break;
-                case DataGenerationProperty.Type.STAIRS:
+                }
+                case DataGenerationProperty.Type.STAIRS -> {
                     pattern = RecipePatterns.DYED_STAIRS;
                     count = 6;
-                    break;
-                case DataGenerationProperty.Type.SLAB:
+                }
+                case DataGenerationProperty.Type.SLAB -> {
                     pattern = RecipePatterns.DYED_SLAB;
                     count = 6;
-                    break;
-                case DataGenerationProperty.Type.BUTTON:
+                }
+                case DataGenerationProperty.Type.BUTTON -> {
                     ShapelessRecipeBuilder
-                            .shapelessRecipe(getByProperty(property))
-                            .addIngredient(ReflectionUtil.requireBlockHolderByName(StringUtils.getDyedBaseName(property.getDyedName())).getBlock().get())
-                            .addCriterion(property.getDyedName(), InventoryChangeTrigger.Instance.forItems(getByProperty(property)))
-                            .setGroup(Reference.MOD_ID)
-                            .build(consumer);
+                            .shapeless(getByProperty(property))
+                            .requires(ReflectionUtil.requireBlockHolderByName(StringUtils.getDyedBaseName(property.getDyedName())).getBlock().get())
+                            .unlockedBy(property.getDyedName(), InventoryChangeTrigger.TriggerInstance.hasItems(getByProperty(property)))
+                            .group(Reference.MOD_ID)
+                            .save(consumer);
                     continue;
-                default:
+                }
+                default -> {
                     pattern = null;
                     count = 0; // Doesn't matter - will continue anyways...
+                }
             }
             if (pattern == null) {
                 DyeExtension.LOGGER.warn("Pattern is null.");
                 continue;
             }
-            final ShapedRecipeBuilder shapedRecipeBuilder = ShapedRecipeBuilder.shapedRecipe(getByProperty(property), count);
+            final ShapedRecipeBuilder shapedRecipeBuilder = ShapedRecipeBuilder.shaped(getByProperty(property), count);
             if (!pattern.isOnlyOneLine()) {
                 shapedRecipeBuilder
-                        .patternLine(pattern.getPattern1())
-                        .patternLine(pattern.getPattern2())
-                        .patternLine(pattern.getPattern3());
+                        .pattern(pattern.getPattern1())
+                        .pattern(pattern.getPattern2())
+                        .pattern(pattern.getPattern3());
             }
             else {
-                shapedRecipeBuilder.patternLine(pattern.getPattern1());
+                shapedRecipeBuilder.pattern(pattern.getPattern1());
             }
             for (int x = 0; x < pattern.getRecipeIngredients().length; x++) {
-                shapedRecipeBuilder.key(getKey(x), getByResult(property.getDyedName(), pattern.getRecipeIngredients()[x]));
+                shapedRecipeBuilder.define(getKey(x), getByResult(property.getDyedName(), pattern.getRecipeIngredients()[x]));
             }
-            shapedRecipeBuilder.addCriterion(property.getDyedName(),
-                    InventoryChangeTrigger.Instance.forItems(getByProperty(property)))
-                    .setGroup(Reference.MOD_ID)
-                    .build(consumer);
+            shapedRecipeBuilder.unlockedBy(property.getDyedName(),
+                    InventoryChangeTrigger.TriggerInstance.hasItems(getByProperty(property)))
+                    .group(Reference.MOD_ID)
+                    .save(consumer);
         }
     }
 
@@ -81,27 +87,21 @@ public class Recipes extends RecipeProvider {
 
     @SuppressWarnings("ConstantConditions")
     private Block getByProperty(DataGenerationProperty property) {
-        switch (property.getType()) {
-            case DataGenerationProperty.Type.STAIRS:
-                return ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getStairsBlock().get();
-            case DataGenerationProperty.Type.SLAB:
-                return ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getSlabBlock().get();
-            case DataGenerationProperty.Type.BUTTON:
-                return ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getButtonBlock().get();
-            default:
-                return ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getBlock().get();
-        }
+        return switch (property.getType()) {
+            case DataGenerationProperty.Type.STAIRS -> ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getStairsBlock().get();
+            case DataGenerationProperty.Type.SLAB -> ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getSlabBlock().get();
+            case DataGenerationProperty.Type.BUTTON -> ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getButtonBlock().get();
+            default -> ReflectionUtil.requireDyedBlockHolderByName(property.getDyedName()).getBlockFromColor(property.getDyeColor()).getBlock().get();
+        };
     }
 
-    private IItemProvider getByResult(String result, int ingredient) {
-        switch (ingredient) {
-            case RecipeIngredients.DYE:
-                return ReflectionUtil.requireItemByName(StringUtils.getDye(result));
-            case RecipeIngredients.DYED_BLOCK:
-                return ReflectionUtil.requireDyedBlockByName(result);
-            default:
-                // Block
-                return ReflectionUtil.getBlockByName(StringUtils.getBaseName(result));
-        }
+    private ItemLike getByResult(String result, int ingredient) {
+        return switch (ingredient) {
+            case RecipeIngredients.DYE -> ReflectionUtil.requireItemByName(StringUtils.getDye(result));
+            case RecipeIngredients.DYED_BLOCK -> ReflectionUtil.requireDyedBlockByName(result);
+            default ->
+                    // Block
+                    ReflectionUtil.getBlockByName(StringUtils.getBaseName(result));
+        };
     }
 }

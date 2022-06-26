@@ -1,7 +1,5 @@
 package com.justAm0dd3r.dye_extension.data_gen;
 
-import com.justAm0dd3r.dye_extension.DyeExtension;
-
 import java.util.ArrayList;
 import java.util.List;
 

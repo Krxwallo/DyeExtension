@@ -1,8 +1,8 @@
 package com.justAm0dd3r.dye_extension.textures;
 
 import com.justAm0dd3r.dye_extension.DyeExtension;
-import net.minecraft.data.DirectoryCache;
-import net.minecraft.data.IDataProvider;
+import net.minecraft.data.DataProvider;
+import net.minecraft.data.HashCache;
 
 import javax.annotation.Nonnull;
 import java.io.File;
@@ -14,7 +14,7 @@ import java.util.Objects;
 /**
  * Only works in a development environment.
  */
-public abstract class TextureProvider<T extends File> implements IDataProvider {
+public abstract class TextureProvider<T extends File> implements DataProvider {
     /** Get's filled by subclass */
     protected final List<T> textures = new ArrayList<>();
     private final String modId;
@@ -28,7 +28,7 @@ public abstract class TextureProvider<T extends File> implements IDataProvider {
     protected abstract void registerTextures() throws IOException;
 
     @Override
-    public void act(@Nonnull DirectoryCache cache) throws IOException{
+    public void run(@Nonnull HashCache cache) throws IOException{
         clear();
         registerTextures();
         generateAll();

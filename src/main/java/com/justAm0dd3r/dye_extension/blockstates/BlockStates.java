@@ -5,17 +5,11 @@ import com.justAm0dd3r.dye_extension.data_gen.DataGenerationProperty;
 import com.justAm0dd3r.dye_extension.reference.Reference;
 import com.justAm0dd3r.dye_extension.util.ReflectionUtil;
 import com.justAm0dd3r.dye_extension.util.StringUtils;
-import net.minecraft.block.AbstractButtonBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.StoneButtonBlock;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
-
-import java.sql.Ref;
 
 public class BlockStates extends BlockStateProvider {
     public BlockStates(DataGenerator gen, ExistingFileHelper exFileHelper) {
@@ -28,7 +22,7 @@ public class BlockStates extends BlockStateProvider {
             String dyedBaseName = StringUtils.getDyedBaseName(property.getDyedName());
             switch (property.getType()) {
                 case DataGenerationProperty.Type.STAIRS:
-                    stairsBlock(((StairsBlock) ReflectionUtil.requireBlockHolderByName(property.getDyedName()).getStairsBlock().get()),
+                    stairsBlock(((StairBlock) ReflectionUtil.requireBlockHolderByName(property.getDyedName()).getStairsBlock().get()),
                             dyedBaseName, modLoc("blocks/" + dyedBaseName));
                     break;
                 case DataGenerationProperty.Type.SLAB:

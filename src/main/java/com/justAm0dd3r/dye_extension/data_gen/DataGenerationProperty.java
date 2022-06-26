@@ -1,7 +1,7 @@
 package com.justAm0dd3r.dye_extension.data_gen;
 
 import com.justAm0dd3r.dye_extension.util.StringUtils;
-import net.minecraft.item.DyeColor;
+import net.minecraft.world.item.DyeColor;
 
 public class DataGenerationProperty {
     private final String dyedName;

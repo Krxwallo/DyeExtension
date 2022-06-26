@@ -1,9 +1,8 @@
 package com.justAm0dd3r.dye_extension.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraftforge.fml.RegistryObject;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.fmllegacy.RegistryObject;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

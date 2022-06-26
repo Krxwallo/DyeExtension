@@ -1,15 +1,6 @@
 package com.justAm0dd3r.dye_extension.container;
 
-import com.justAm0dd3r.dye_extension.reference.Reference;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ContainerType;
-import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.network.IContainerFactory;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-
-public class ContainerTypes {
+public class ContainerTypes {/*
     public static final DeferredRegister<ContainerType<?>> CONTAINER_TYPES
             = DeferredRegister.create(ForgeRegistries.CONTAINERS, Reference.MOD_ID);
 
@@ -31,5 +22,5 @@ public class ContainerTypes {
     private static <T extends Container> RegistryObject<ContainerType<T>> register(String id, ContainerType.IFactory<T> factory)
     {
         return CONTAINER_TYPES.register(id, () -> new ContainerType<>(factory));
-    }
+    }*/
 }

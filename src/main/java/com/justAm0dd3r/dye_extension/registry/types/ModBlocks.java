@@ -2,7 +2,7 @@ package com.justAm0dd3r.dye_extension.registry.types;
 
 import com.justAm0dd3r.dye_extension.blocks.DyedBlockHolder;
 import com.justAm0dd3r.dye_extension.reference.Reference;
-import net.minecraft.block.Block;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

@@ -6,14 +6,18 @@ import com.justAm0dd3r.dye_extension.interfaces.IDyedBlockHolder;
 import com.justAm0dd3r.dye_extension.items.ItemHolder;
 import com.justAm0dd3r.dye_extension.registry.types.ModBlocks;
 import com.justAm0dd3r.dye_extension.registry.types.ModItems;
-import com.justAm0dd3r.dye_extension.tabs.ItemGroups;
+import com.justAm0dd3r.dye_extension.tabs.ItemTabs;
 import com.justAm0dd3r.dye_extension.util.ReflectionUtil;
-import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.DyeColor;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.StoneButtonBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fmllegacy.RegistryObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -107,10 +111,10 @@ public class DyedBlockHolder implements IDyedBlockHolder {
     private BlockRegistry registerBlock(String originalName, String dyedName) {
         // Block
         RegistryObject<Block> block = ModBlocks.BLOCKS.register(dyedName,
-                () -> new Block(AbstractBlock.Properties.from(ReflectionUtil.requireBlockByName(originalName))));
+                () -> new Block(BlockBehaviour.Properties.copy(ReflectionUtil.requireBlockByName(originalName))));
 
         // Block Item
-        RegistryObject<Item> item = ModItems.ITEMS.register(dyedName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
+        RegistryObject<Item> item = ModItems.ITEMS.register(dyedName, () -> new BlockItem(block.get(), new Item.Properties().tab(ItemTabs.getFromBlock(block.get()))));
 
         // Register the property for data generation
         DataGenerationProperties.addProperty(new DataGenerationProperty(dyedName, DataGenerationProperty.Type.BLOCK));
@@ -130,10 +134,10 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         final String unDyedStairsName = originalName + "_slab";
         // Block
         RegistryObject<Block> block = ModBlocks.BLOCKS.register(stairsName,
-                () -> new StairsBlock(() -> blockRegistry.getBlock().get().getDefaultState(), AbstractBlock.Properties.from(ReflectionUtil.requireBlockByName(unDyedStairsName)).setRequiresTool()));
+                () -> new StairBlock(() -> blockRegistry.getBlock().get().defaultBlockState(), BlockBehaviour.Properties.copy(ReflectionUtil.requireBlockByName(unDyedStairsName)).requiresCorrectToolForDrops()));
 
         // Block Item
-        RegistryObject<Item> item = ModItems.ITEMS.register(stairsName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
+        RegistryObject<Item> item = ModItems.ITEMS.register(stairsName, () -> new BlockItem(block.get(), new Item.Properties().tab(ItemTabs.getFromBlock(block.get()))));
 
         // Register the property for data generation
         DataGenerationProperties.addProperty(new DataGenerationProperty(stairsName, DataGenerationProperty.Type.STAIRS));
@@ -149,12 +153,12 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         final String unDyedSlabName = originalName + "_slab";
         // Block
         RegistryObject<Block> block = ModBlocks.BLOCKS.register(slabName,
-                () -> new SlabBlock(AbstractBlock.Properties.from(
+                () -> new SlabBlock(BlockBehaviour.Properties.copy(
                         /* Get the Blocks.XXX (e.g. Blocks.ANDESITE_SLAB) field and create the properties from it */
-                        ReflectionUtil.requireBlockByName(unDyedSlabName)).setRequiresTool()));
+                        ReflectionUtil.requireBlockByName(unDyedSlabName)).requiresCorrectToolForDrops()));
 
         // Block Item
-        RegistryObject<Item> item = ModItems.ITEMS.register(slabName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
+        RegistryObject<Item> item = ModItems.ITEMS.register(slabName, () -> new BlockItem(block.get(), new Item.Properties().tab(ItemTabs.getFromBlock(block.get()))));
 
         // Register the property for data generation
         DataGenerationProperties.addProperty(new DataGenerationProperty(slabName, DataGenerationProperty.Type.SLAB));
@@ -170,12 +174,12 @@ public class DyedBlockHolder implements IDyedBlockHolder {
         final String unDyedButtonName = originalName + "_button";
         // Block
         RegistryObject<Block> block = ModBlocks.BLOCKS.register(buttonName,
-                () -> new StoneButtonBlock(AbstractBlock.Properties.from(
+                () -> new StoneButtonBlock(BlockBehaviour.Properties.copy(
                         /* Get the Blocks.XXX (e.g. Blocks.STONE_BUTTON) field and create the properties from it */
-                        ReflectionUtil.requireBlockByName(unDyedButtonName)).setRequiresTool()));
+                        ReflectionUtil.requireBlockByName(unDyedButtonName)).requiresCorrectToolForDrops()));
 
         // Block Item
-        RegistryObject<Item> item = ModItems.ITEMS.register(buttonName, () -> new BlockItem(block.get(), new Item.Properties().group(ItemGroups.getFromBlock(block.get()))));
+        RegistryObject<Item> item = ModItems.ITEMS.register(buttonName, () -> new BlockItem(block.get(), new Item.Properties().tab(ItemTabs.getFromBlock(block.get()))));
 
         // Register the property for data generation
         DataGenerationProperties.addProperty(new DataGenerationProperty(buttonName, DataGenerationProperty.Type.BUTTON));

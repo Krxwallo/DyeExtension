@@ -6,11 +6,10 @@ import com.justAm0dd3r.dye_extension.loot_tables.LootTables;
 import com.justAm0dd3r.dye_extension.models.BlockModels;
 import com.justAm0dd3r.dye_extension.models.ItemModels;
 import com.justAm0dd3r.dye_extension.textures.Textures;
-import net.minecraft.client.Minecraft;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {

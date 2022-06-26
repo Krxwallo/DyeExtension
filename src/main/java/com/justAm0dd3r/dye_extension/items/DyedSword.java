@@ -1,10 +1,11 @@
 package com.justAm0dd3r.dye_extension.items;
 
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.SwordItem;
+
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
 
 public class DyedSword extends SwordItem {
-    public DyedSword(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder) {
+    public DyedSword(Tier tier, int attackDamageIn, float attackSpeedIn, Properties builder) {
         super(tier, attackDamageIn, attackSpeedIn, builder);
     }
 }

@@ -1,7 +1,7 @@
 package com.justAm0dd3r.dye_extension.util;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 @SuppressWarnings("unused") // Reflection
 public class DefaultBlocks {

@@ -1,10 +1,11 @@
 package com.justAm0dd3r.dye_extension.screen;
 
+/*
 import com.justAm0dd3r.dye_extension.container.DyedFurnaceContainer;
 import net.minecraft.client.gui.recipebook.FurnaceRecipeGui;
 import net.minecraft.client.gui.screen.inventory.AbstractFurnaceScreen;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -18,3 +19,4 @@ public class DyedFurnaceScreen extends AbstractFurnaceScreen<DyedFurnaceContaine
         super(p_i51089_1_, new FurnaceRecipeGui(), p_i51089_2_, p_i51089_3_, FURNACE_GUI_TEXTURES);
     }
 }
+ */

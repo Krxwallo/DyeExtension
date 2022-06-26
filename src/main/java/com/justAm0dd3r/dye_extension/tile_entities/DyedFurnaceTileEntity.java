@@ -1,12 +1,7 @@
 package com.justAm0dd3r.dye_extension.tile_entities;
 
-import com.justAm0dd3r.dye_extension.container.DyedFurnaceContainer;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.item.crafting.IRecipeType;
-import net.minecraft.tileentity.AbstractFurnaceTileEntity;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 
 /*
 Author: justAm0dd3r
@@ -20,8 +15,8 @@ public class DyedFurnaceTileEntity {// extends AbstractFurnaceTileEntity {
     //}
 
     //@Override
-    protected ITextComponent getDefaultName() {
-        return new TranslationTextComponent("container.dyed_furnace");
+    protected Component getDefaultName() {
+        return new TranslatableComponent("container.dyed_furnace");
     }
 
     //@Override

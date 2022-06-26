@@ -4,13 +4,18 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.justAm0dd3r.dye_extension.util.LootTableUtils;
-import net.minecraft.block.Block;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.DirectoryCache;
-import net.minecraft.data.IDataProvider;
-import net.minecraft.data.LootTableProvider;
-import net.minecraft.loot.*;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.data.DataProvider;
+import net.minecraft.data.HashCache;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.LootTables;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -44,11 +49,11 @@ public abstract class BaseLootTableProvider extends LootTableProvider {
 
     // Subclasses can call this if they want a standard loot table. Modify this for your own needs
     protected LootTable.Builder createStandardTable(String name, Block block) {
-        LootPool.Builder builder = LootPool.builder()
+        LootPool.Builder builder = LootPool.lootPool()
                 .name(name)
-                .rolls(ConstantRange.of(1))
-                .addEntry(ItemLootEntry.builder(block));
-        return LootTable.builder().addLootPool(builder);
+                .setRolls(ConstantValue.exactly(1))
+                .add(LootItem.lootTableItem(block));
+        return LootTable.lootTable().withPool(builder);
     }
 
     protected JsonObject createLeavesTable(String name) {
@@ -57,12 +62,12 @@ public abstract class BaseLootTableProvider extends LootTableProvider {
 
     @Override
     // Entry point
-    public void act(@Nonnull DirectoryCache cache) {
+    public void run(@Nonnull HashCache cache) {
         addTables();
 
         Map<ResourceLocation, LootTable> tables = new HashMap<>();
         for (Map.Entry<Block, LootTable.Builder> entry : lootTables.entrySet()) {
-            tables.put(entry.getKey().getLootTable(), entry.getValue().setParameterSet(LootParameterSets.BLOCK).build());
+            tables.put(entry.getKey().getLootTable(), entry.getValue().setParamSet(LootContextParamSets.BLOCK).build());
         }
 
         Map<ResourceLocation, JsonObject> jsonTablesLocal = new HashMap<>();
@@ -74,12 +79,12 @@ public abstract class BaseLootTableProvider extends LootTableProvider {
     }
 
     // Actually write out the tables in the output folder
-    private void writeTables(DirectoryCache cache, Map<ResourceLocation, LootTable> tables, Map<ResourceLocation, JsonObject> jsonTables) {
+    private void writeTables(HashCache cache, Map<ResourceLocation, LootTable> tables, Map<ResourceLocation, JsonObject> jsonTables) {
         Path outputFolder = this.generator.getOutputFolder();
         tables.forEach((key, lootTable) -> {
             Path path = outputFolder.resolve("data/" + key.getNamespace() + "/loot_tables/" + key.getPath() + ".json");
             try {
-                IDataProvider.save(GSON, cache, LootTableManager.toJson(lootTable), path);
+                DataProvider.save(GSON, cache, LootTables.serialize(lootTable), path);
             } catch (IOException e) {
                 LOGGER.error("Couldn't write loot table {}", path, e);
             }
@@ -87,7 +92,7 @@ public abstract class BaseLootTableProvider extends LootTableProvider {
         jsonTables.forEach((key, lootTable) -> {
             Path path = outputFolder.resolve("data/" + key.getNamespace() + "/loot_tables/" + key.getPath() + ".json");
             try {
-                IDataProvider.save(GSON, cache, lootTable, path);
+                DataProvider.save(GSON, cache, lootTable, path);
             } catch (IOException e) {
                 LOGGER.error("Couldn't write loot table {}", path, e);
             }

@@ -2,7 +2,7 @@ package com.justAm0dd3r.dye_extension.interfaces;
 
 import com.justAm0dd3r.dye_extension.blocks.BlockHolder;
 import com.justAm0dd3r.dye_extension.items.ItemHolder;
-import net.minecraft.item.DyeColor;
+import net.minecraft.world.item.DyeColor;
 
 import java.util.Collection;
 

@@ -1,8 +1,8 @@
 package com.justAm0dd3r.dye_extension.textures;
 
 import com.justAm0dd3r.dye_extension.reference.Reference;
-import net.minecraft.item.DyeColor;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.DyeColor;
 
 import java.util.HashMap;
 

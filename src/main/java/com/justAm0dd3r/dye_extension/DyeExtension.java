@@ -1,12 +1,8 @@
 package com.justAm0dd3r.dye_extension;
 
-import com.justAm0dd3r.dye_extension.container.ContainerTypes;
 import com.justAm0dd3r.dye_extension.filters.FiltersRebornManager;
 import com.justAm0dd3r.dye_extension.reference.Reference;
 import com.justAm0dd3r.dye_extension.registry.Registries;
-import com.justAm0dd3r.dye_extension.screen.DyedFurnaceScreen;
-import com.justAm0dd3r.dye_extension.tile_entities.TileEntityTypes;
-import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,8 +24,8 @@ public class DyeExtension {
         LOGGER.info(Reference.NAME + " Version " + Reference.VERSION + " by " + Reference.AUTHOR + " started up.");
 
         Registries.init();
-        TileEntityTypes.init();
-        ContainerTypes.init();
+        //TileEntityTypes.init();
+        //ContainerTypes.init();
 
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -40,8 +36,8 @@ public class DyeExtension {
 
     @SubscribeEvent
     public void clientSetup(FMLClientSetupEvent event) {
-        ScreenManager.registerFactory(ContainerTypes.DYED_FURNACE.get(), DyedFurnaceScreen::
-                new);
+        /*ScreenManager.registerFactory(ContainerTypes.DYED_FURNACE.get(), DyedFurnaceScreen::
+                new);*/
 
         FiltersRebornManager.registerFiltersWhenLoaded();
     }

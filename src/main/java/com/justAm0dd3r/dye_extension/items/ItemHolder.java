@@ -1,8 +1,8 @@
 package com.justAm0dd3r.dye_extension.items;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+
+import net.minecraft.world.item.Item;
+import net.minecraftforge.fmllegacy.RegistryObject;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

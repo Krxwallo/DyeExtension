@@ -1,8 +1,9 @@
 package com.justAm0dd3r.dye_extension.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.fmllegacy.RegistryObject;
 
 public class BlockRegistry {
     private final RegistryObject<Block> block;
